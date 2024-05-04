@@ -1,0 +1,15 @@
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.exe.config
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.exe
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.pdb
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.AssemblyReference.cache
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Login.resources
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Properties.Resources.resources
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.SignUp.resources
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.GenerateResource.cache
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.CoreCompileInputs.cache
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.exe
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.pdb
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Home.resources
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Courses.resources
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Lessons.resources
+D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Testing.resources

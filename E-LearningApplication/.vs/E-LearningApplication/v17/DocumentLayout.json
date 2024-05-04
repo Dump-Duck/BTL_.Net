@@ -1,0 +1,383 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\usermanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\examing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\examing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\examing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\examing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\lessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\lessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\lessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\lessons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\testing.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\testing.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\courses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\courses.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\courses.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\login.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\login.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|d:\\projects dotnet\\e-learning application\\e-learningapplication\\e-learningapplication\\forum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2595EEFE-921B-4CA9-868D-0FB2641BCE6B}|E-LearningApplication\\E-LearningApplication.csproj|solutionrelative:e-learningapplication\\forum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Examing.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Examing.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Examing.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Examing.cs",
+              "RelativeToolTip": "E-LearningApplication\\Examing.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAD4vxIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T11:24:30.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Examing.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Examing.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Examing.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Examing.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\Examing.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T11:20:13.211Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Testing.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Testing.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Testing.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Testing.cs",
+              "RelativeToolTip": "E-LearningApplication\\Testing.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T11:14:29.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lessons.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Lessons.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Lessons.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Lessons.cs",
+              "RelativeToolTip": "E-LearningApplication\\Lessons.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T11:07:23.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserManagement.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\UserManagement.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\UserManagement.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\UserManagement.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\UserManagement.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:41:30.53Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Testing.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Testing.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Testing.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Testing.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\Testing.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:37:18.38Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Lessons.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Lessons.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Lessons.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Lessons.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\Lessons.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:35:08.065Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Testing.Designer.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Testing.Designer.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Testing.Designer.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Testing.Designer.cs",
+              "RelativeToolTip": "E-LearningApplication\\Testing.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T11:14:41.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Home.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Home.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Home.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:32:59.264Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Home.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Home.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Home.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Home.cs",
+              "RelativeToolTip": "E-LearningApplication\\Home.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAIAwwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T10:59:51.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Courses.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Courses.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Courses.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Courses.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\Courses.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:34:47.824Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Courses.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Courses.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Courses.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Courses.cs",
+              "RelativeToolTip": "E-LearningApplication\\Courses.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAIAwwCgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T11:03:10.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Courses.Designer.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Courses.Designer.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Courses.Designer.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Courses.Designer.cs",
+              "RelativeToolTip": "E-LearningApplication\\Courses.Designer.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T11:00:52.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Program.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Program.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Program.cs",
+              "RelativeToolTip": "E-LearningApplication\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T10:16:29.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\SignUp.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\SignUp.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\SignUp.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:34:24.604Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Login.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Login.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Login.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:34:05.118Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Login.Designer.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Login.Designer.cs",
+              "RelativeToolTip": "E-LearningApplication\\Login.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:50:07.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\SignUp.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\SignUp.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\SignUp.cs",
+              "RelativeToolTip": "E-LearningApplication\\SignUp.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAtwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:59:51.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Login.resx",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Login.resx",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Login.resx",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Login.resx",
+              "RelativeToolTip": "E-LearningApplication\\Login.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-04T09:50:11.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Login.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Login.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Login.cs",
+              "RelativeToolTip": "E-LearningApplication\\Login.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAD4vwoAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:49:55.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserInformation.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\UserInformation.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\UserInformation.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\UserInformation.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\UserInformation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:38:45.209Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Forum.cs [Design]",
+              "DocumentMoniker": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Forum.cs",
+              "RelativeDocumentMoniker": "E-LearningApplication\\Forum.cs",
+              "ToolTip": "D:\\Projects DotNet\\E-Learning Application\\E-LearningApplication\\E-LearningApplication\\Forum.cs [Design]",
+              "RelativeToolTip": "E-LearningApplication\\Forum.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T09:36:50.456Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
