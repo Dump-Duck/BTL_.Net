@@ -13,3 +13,22 @@ D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplic
 D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Courses.resources
 D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Lessons.resources
 D:\Projects DotNet\E-Learning Application\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Testing.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.exe.config
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.exe
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.pdb
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.AssemblyReference.cache
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Courses.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Examing.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Home.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Lessons.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Login.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Properties.Resources.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.SignUp.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.UserManagement.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.GenerateResource.cache
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.CoreCompileInputs.cache
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.exe
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.pdb
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Forum.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Practices.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.CoursesManagement.resources

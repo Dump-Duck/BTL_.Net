@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,14 +19,21 @@ namespace E_LearningApplication
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
+        string sql;
+        SqlConnection sqlConnection;
+        SqlCommand sqlCommand;
+
+        private void btnSignUp_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            sqlConnection = new SqlConnection(stringConnect);
+            sql = @"INSERT INTO Users(Username,Password,Email,Level,Role)
+                            VALUES (N'"+textUserName.Text+@"', N'"+textPassword.Text+@"', N'"+textEmail.Text+@"', N'"+levelSelectBox.Text+@"', N'"+roleSelectBox.Text+@"')";
+            sqlConnection.Open();
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("Sign up success!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

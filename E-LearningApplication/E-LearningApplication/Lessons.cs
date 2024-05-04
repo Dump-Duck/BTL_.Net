@@ -19,10 +19,7 @@ namespace E_LearningApplication
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Home home = new Home();
-            home.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
         private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -33,11 +30,20 @@ namespace E_LearningApplication
             this.Show();
         }
 
-        private void blogToolStripMenuItem_Click(object sender, EventArgs e)
+        private void forumToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
             Forum forum = new Forum();
             forum.ShowDialog();
+            this.Show();
+
+        }
+
+        private void practiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Practices practices = new Practices();
+            practices.ShowDialog();
             this.Show();
         }
     }

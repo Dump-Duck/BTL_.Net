@@ -28,18 +28,23 @@ namespace E_LearningApplication
         private void practiceToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Testing testing = new Testing();
-            testing.ShowDialog();
+            Practices practices = new Practices();
+            practices.ShowDialog();
             this.Show();
         }
 
-        private void blogToolStripMenuItem_Click(object sender, EventArgs e)
+        private void forumToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
             Forum forum = new Forum();
             forum.ShowDialog();
             this.Show();
 
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This is home page!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

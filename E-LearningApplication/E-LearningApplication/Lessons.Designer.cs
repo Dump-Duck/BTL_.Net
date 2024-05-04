@@ -32,11 +32,11 @@
             this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.practiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blogToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.lessonsDataGridView = new System.Windows.Forms.DataGridView();
             this.menuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lessonsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -46,73 +46,78 @@
             this.homeToolStripMenuItem,
             this.coursesToolStripMenuItem,
             this.practiceToolStripMenuItem,
-            this.blogToolStripMenuItem});
+            this.forumToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(948, 28);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip.Size = new System.Drawing.Size(711, 24);
             this.menuStrip.TabIndex = 5;
             this.menuStrip.Text = "menuStrip";
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // coursesToolStripMenuItem
             // 
             this.coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
-            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.coursesToolStripMenuItem.Text = "Courses";
             this.coursesToolStripMenuItem.Click += new System.EventHandler(this.coursesToolStripMenuItem_Click);
             // 
             // practiceToolStripMenuItem
             // 
             this.practiceToolStripMenuItem.Name = "practiceToolStripMenuItem";
-            this.practiceToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
-            this.practiceToolStripMenuItem.Text = "Practice";
+            this.practiceToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.practiceToolStripMenuItem.Text = "Practices";
+            this.practiceToolStripMenuItem.Click += new System.EventHandler(this.practiceToolStripMenuItem_Click);
             // 
-            // blogToolStripMenuItem
+            // forumToolStripMenuItem
             // 
-            this.blogToolStripMenuItem.Name = "blogToolStripMenuItem";
-            this.blogToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
-            this.blogToolStripMenuItem.Text = "Blog";
-            this.blogToolStripMenuItem.Click += new System.EventHandler(this.blogToolStripMenuItem_Click);
+            this.forumToolStripMenuItem.Name = "forumToolStripMenuItem";
+            this.forumToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.forumToolStripMenuItem.Text = "Forum";
+            this.forumToolStripMenuItem.Click += new System.EventHandler(this.forumToolStripMenuItem_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(402, 116);
+            this.label1.Location = new System.Drawing.Point(302, 94);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 29);
+            this.label1.Size = new System.Drawing.Size(87, 24);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Lesson";
+            this.label1.Text = "Lessons";
             // 
-            // dataGridView1
+            // lessonsDataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 184);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(881, 267);
-            this.dataGridView1.TabIndex = 6;
+            this.lessonsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lessonsDataGridView.Location = new System.Drawing.Point(26, 150);
+            this.lessonsDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.lessonsDataGridView.Name = "lessonsDataGridView";
+            this.lessonsDataGridView.RowHeadersWidth = 51;
+            this.lessonsDataGridView.RowTemplate.Height = 24;
+            this.lessonsDataGridView.Size = new System.Drawing.Size(661, 217);
+            this.lessonsDataGridView.TabIndex = 6;
             // 
             // Lessons
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 474);
+            this.ClientSize = new System.Drawing.Size(711, 385);
             this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.lessonsDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Lessons";
             this.Text = "Lessons";
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lessonsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,8 +129,8 @@
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem coursesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem practiceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blogToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem forumToolStripMenuItem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView lessonsDataGridView;
     }
 }
