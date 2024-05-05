@@ -17,26 +17,22 @@ namespace E_LearningApplication
         {
             InitializeComponent();
         }
+
         // them chuoi ket not 
         string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
-        SqlCommand excutive;
+        SqlCommand sqlCommand;
         SqlDataReader dataReader;
         int i = 0;
 
-
-        private void CoursesManagement_Load(object sender, EventArgs e)
-        {
-            sqlConnection = new SqlConnection(stringConnect);
-        }
         public void displayDataCourses()
         {
             listViewDataCourses.Items.Clear();
             sqlConnection.Open();
             sql = @"SELECT * FROM Courses";
-            excutive = new SqlCommand(sql, sqlConnection);
-            dataReader = excutive.ExecuteReader();
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            dataReader = sqlCommand.ExecuteReader();
 
             i = 0;
             while (dataReader.Read())
@@ -48,23 +44,25 @@ namespace E_LearningApplication
                 listViewDataCourses.Items[i].SubItems.Add(dataReader[4].ToString());
                 listViewDataCourses.Items[i].SubItems.Add(dataReader[5].ToString());
                 listViewDataCourses.Items[i].SubItems.Add(dataReader[6].ToString());
+                i++;
             }
             sqlConnection.Close();
         }
 
-        private void listViewDataCourses_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+        private void CoursesManagement_Load(object sender, EventArgs e)
+        {
+            sqlConnection = new SqlConnection(stringConnect);
+            displayDataCourses();
         }
 
         private void listViewDataCourses_Click(object sender, EventArgs e)
         {
             textBoxCourseID.Text = listViewDataCourses.SelectedItems[0].SubItems[0].Text;
-            textBoxCourseTitle.Text = listViewDataCourses.SelectedItems[0].SubItems[1].Text;
+            textBoxCourseName.Text = listViewDataCourses.SelectedItems[0].SubItems[1].Text;
             textBoxDescriptionCourse.Text = listViewDataCourses.SelectedItems[0].SubItems[2].Text;
-            comboBoxLabelCourse.Text = listViewDataCourses.SelectedItems[0].SubItems[3].Text;
+            comboBoxLevelCourse.Text = listViewDataCourses.SelectedItems[0].SubItems[3].Text;
             textBoxCreateBy.Text = listViewDataCourses.SelectedItems[0].SubItems[4].Text;
-
         }
 
         private void btnAddCourse_Click(object sender, EventArgs e)
@@ -72,11 +70,12 @@ namespace E_LearningApplication
             DateTime curDate = DateTime.Now;
             listViewDataCourses.Items.Clear();
             sqlConnection.Open();
-            sql = @"INSERT INTO Courses(CourseName, Description, Level, CreatedBy, UpdateAt, CreatedAt)
-                VALUE (N'" + textBoxCourseTitle + @"', N'" + textBoxDescriptionCourse + @"', N'" + comboBoxLabelCourse + @"',N'" + textBoxCreateBy + @"', N'" + curDate + @"', N'" + curDate + @"')";
-            excutive = new SqlCommand(sql, sqlConnection);
-            excutive.ExecuteNonQuery();
+            sql = @"INSERT INTO Courses(CourseName, Description, Level, CreateBy, UpdateAt, CreateAt)
+                  VALUES (N'" + textBoxCourseName.Text + @"', N'" + textBoxDescriptionCourse.Text + @"', N'" + comboBoxLevelCourse.Text + @"',N'" + textBoxCreateBy.Text + @"', GETDATE(), GETDATE())";
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
             sqlConnection.Close();
+            MessageBox.Show("Add course success!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
             displayDataCourses();
         }
 
@@ -85,11 +84,12 @@ namespace E_LearningApplication
             DateTime curDate = DateTime.Now;
             listViewDataCourses.Items.Clear();
             sqlConnection.Open();
-            sql = @"Update Courses Set CourseName = N'" + textBoxCourseTitle + @"', Description = N'" + textBoxDescriptionCourse + @"',
-                    Level = N'" + comboBoxLabelCourse + @"', UpdateAt = N'" + curDate + @"' WHERE CourseID = N'" + textBoxCourseID + @"' ";
-            excutive = new SqlCommand(sql, sqlConnection);
-            excutive.ExecuteNonQuery();
+            sql = @"Update Courses Set CourseName = N'" + textBoxCourseName.Text + @"', Description = N'" + textBoxDescriptionCourse.Text + @"',
+                      Level = N'" + comboBoxLevelCourse.Text + @"', UpdateAt = GETDATE() WHERE CourseID = N'" + textBoxCourseID.Text + @"' ";
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
             sqlConnection.Close();
+            MessageBox.Show("Course Updated!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
             displayDataCourses();
         }
 
@@ -97,10 +97,11 @@ namespace E_LearningApplication
         {
             listViewDataCourses.Items.Clear();
             sqlConnection.Open();
-            sql = @"Delete FROM Courses Where (CourseID = N'" + textBoxCourseID + @"')";
-            excutive = new SqlCommand(sql, sqlConnection);
-            excutive.ExecuteNonQuery();
+            sql = @"Delete FROM Courses Where (CourseID = N'" + textBoxCourseID.Text + @"')";
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
             sqlConnection.Close();
+            MessageBox.Show("Course Deleted!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
             displayDataCourses();
         }
     }

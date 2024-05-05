@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("");
-            this.CourseTitle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.CreatedAt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            System.Windows.Forms.ListViewItem listViewItem5 = new System.Windows.Forms.ListViewItem("");
+            this.CreateAt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.UpdateAt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CreatedBy = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CourseID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,56 +49,45 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBoxCourseID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBoxLabelCourse = new System.Windows.Forms.ComboBox();
+            this.comboBoxLevelCourse = new System.Windows.Forms.ComboBox();
             this.textBoxDescriptionCourse = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBoxCourseTitle = new System.Windows.Forms.TextBox();
+            this.textBoxCourseName = new System.Windows.Forms.TextBox();
+            this.CourseName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // CourseTitle
+            // CreateAt
             // 
-            this.CourseTitle.DisplayIndex = 1;
-            this.CourseTitle.Text = "CourseTitle";
-            this.CourseTitle.Width = 185;
-            // 
-            // CreatedAt
-            // 
-            this.CreatedAt.DisplayIndex = 6;
-            this.CreatedAt.Text = "Created Date";
-            this.CreatedAt.Width = 326;
+            this.CreateAt.Text = "Create At";
+            this.CreateAt.Width = 143;
             // 
             // UpdateAt
             // 
-            this.UpdateAt.DisplayIndex = 5;
             this.UpdateAt.Text = "Update At";
-            this.UpdateAt.Width = 0;
+            this.UpdateAt.Width = 123;
             // 
             // CreatedBy
             // 
-            this.CreatedBy.DisplayIndex = 4;
             this.CreatedBy.Text = "Created By";
-            this.CreatedBy.Width = 0;
+            this.CreatedBy.Width = 103;
             // 
             // CourseID
             // 
-            this.CourseID.DisplayIndex = 0;
             this.CourseID.Text = "Course ID";
-            this.CourseID.Width = 152;
+            this.CourseID.Width = 63;
             // 
             // Level
             // 
-            this.Level.DisplayIndex = 3;
             this.Level.Text = "Level";
-            this.Level.Width = 143;
+            this.Level.Width = 98;
             // 
             // Description
             // 
-            this.Description.DisplayIndex = 2;
             this.Description.Text = "Description";
-            this.Description.Width = 235;
+            this.Description.Width = 101;
             // 
             // label5
             // 
@@ -114,22 +102,23 @@
             // listViewDataCourses
             // 
             this.listViewDataCourses.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.CourseID,
+            this.CourseName,
             this.Description,
             this.Level,
-            this.CourseID,
             this.CreatedBy,
             this.UpdateAt,
-            this.CreatedAt,
-            this.CourseTitle});
+            this.CreateAt});
             this.listViewDataCourses.HideSelection = false;
             this.listViewDataCourses.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem2});
-            this.listViewDataCourses.Location = new System.Drawing.Point(397, 138);
+            listViewItem5});
+            this.listViewDataCourses.Location = new System.Drawing.Point(335, 133);
             this.listViewDataCourses.Name = "listViewDataCourses";
-            this.listViewDataCourses.Size = new System.Drawing.Size(682, 284);
+            this.listViewDataCourses.Size = new System.Drawing.Size(742, 284);
             this.listViewDataCourses.TabIndex = 28;
             this.listViewDataCourses.UseCompatibleStateImageBehavior = false;
             this.listViewDataCourses.View = System.Windows.Forms.View.Details;
+            this.listViewDataCourses.Click += new System.EventHandler(this.listViewDataCourses_Click);
             // 
             // textBoxCreateBy
             // 
@@ -161,6 +150,7 @@
             this.btnUpdateCourse.TabIndex = 24;
             this.btnUpdateCourse.Text = "Update Course";
             this.btnUpdateCourse.UseVisualStyleBackColor = false;
+            this.btnUpdateCourse.Click += new System.EventHandler(this.btnUpdateCourse_Click);
             // 
             // btnAddCourse
             // 
@@ -173,6 +163,7 @@
             this.btnAddCourse.TabIndex = 23;
             this.btnAddCourse.Text = "Add Course";
             this.btnAddCourse.UseVisualStyleBackColor = false;
+            this.btnAddCourse.Click += new System.EventHandler(this.btnAddCourse_Click);
             // 
             // label3
             // 
@@ -227,6 +218,7 @@
             this.btnDeleteCourse.TabIndex = 25;
             this.btnDeleteCourse.Text = "Delete Course";
             this.btnDeleteCourse.UseVisualStyleBackColor = false;
+            this.btnDeleteCourse.Click += new System.EventHandler(this.btnDeleteCourse_Click);
             // 
             // panel1
             // 
@@ -258,17 +250,17 @@
             this.label6.TabIndex = 36;
             this.label6.Text = "Course ID";
             // 
-            // comboBoxLabelCourse
+            // comboBoxLevelCourse
             // 
-            this.comboBoxLabelCourse.FormattingEnabled = true;
-            this.comboBoxLabelCourse.Items.AddRange(new object[] {
+            this.comboBoxLevelCourse.FormattingEnabled = true;
+            this.comboBoxLevelCourse.Items.AddRange(new object[] {
             "Basic",
             "Independent",
             "Proficient"});
-            this.comboBoxLabelCourse.Location = new System.Drawing.Point(16, 386);
-            this.comboBoxLabelCourse.Name = "comboBoxLabelCourse";
-            this.comboBoxLabelCourse.Size = new System.Drawing.Size(183, 21);
-            this.comboBoxLabelCourse.TabIndex = 35;
+            this.comboBoxLevelCourse.Location = new System.Drawing.Point(16, 386);
+            this.comboBoxLevelCourse.Name = "comboBoxLevelCourse";
+            this.comboBoxLevelCourse.Size = new System.Drawing.Size(183, 21);
+            this.comboBoxLevelCourse.TabIndex = 35;
             // 
             // textBoxDescriptionCourse
             // 
@@ -305,18 +297,23 @@
             this.label9.Location = new System.Drawing.Point(12, 205);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 13);
+            this.label9.Size = new System.Drawing.Size(71, 13);
             this.label9.TabIndex = 31;
-            this.label9.Text = "Course Title";
+            this.label9.Text = "Course Name";
             // 
-            // textBoxCourseTitle
+            // textBoxCourseName
             // 
-            this.textBoxCourseTitle.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCourseTitle.Location = new System.Drawing.Point(15, 242);
-            this.textBoxCourseTitle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBoxCourseTitle.Name = "textBoxCourseTitle";
-            this.textBoxCourseTitle.Size = new System.Drawing.Size(292, 24);
-            this.textBoxCourseTitle.TabIndex = 30;
+            this.textBoxCourseName.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCourseName.Location = new System.Drawing.Point(15, 242);
+            this.textBoxCourseName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textBoxCourseName.Name = "textBoxCourseName";
+            this.textBoxCourseName.Size = new System.Drawing.Size(292, 24);
+            this.textBoxCourseName.TabIndex = 30;
+            // 
+            // CourseName
+            // 
+            this.CourseName.Text = "Course Name";
+            this.CourseName.Width = 106;
             // 
             // CoursesManagement
             // 
@@ -325,12 +322,12 @@
             this.ClientSize = new System.Drawing.Size(1101, 517);
             this.Controls.Add(this.textBoxCourseID);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBoxLabelCourse);
+            this.Controls.Add(this.comboBoxLevelCourse);
             this.Controls.Add(this.textBoxDescriptionCourse);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBoxCourseTitle);
+            this.Controls.Add(this.textBoxCourseName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.listViewDataCourses);
             this.Controls.Add(this.textBoxCreateBy);
@@ -344,6 +341,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "CoursesManagement";
             this.Text = "CoursesManagement";
+            this.Load += new System.EventHandler(this.CoursesManagement_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -352,8 +350,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.ColumnHeader CourseTitle;
-        private System.Windows.Forms.ColumnHeader CreatedAt;
+        private System.Windows.Forms.ColumnHeader CreateAt;
         private System.Windows.Forms.ColumnHeader UpdateAt;
         private System.Windows.Forms.ColumnHeader CreatedBy;
         private System.Windows.Forms.ColumnHeader CourseID;
@@ -373,11 +370,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBoxCourseID;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBoxLabelCourse;
+        private System.Windows.Forms.ComboBox comboBoxLevelCourse;
         private System.Windows.Forms.TextBox textBoxDescriptionCourse;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxCourseTitle;
+        private System.Windows.Forms.TextBox textBoxCourseName;
+        private System.Windows.Forms.ColumnHeader CourseName;
     }
 }

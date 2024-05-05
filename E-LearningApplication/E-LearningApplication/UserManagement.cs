@@ -18,6 +18,7 @@ namespace E_LearningApplication
             InitializeComponent();
         }
 
+        // them chuoi ket not 
         string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
