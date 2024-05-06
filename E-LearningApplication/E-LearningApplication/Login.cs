@@ -13,8 +13,7 @@ namespace E_LearningApplication
 {
     public partial class Login : Form
     {
-        public delegate void LoginSuccessHandler(int userID);
-        public event LoginSuccessHandler OnLoginSuccess;
+        public static int userID { get; private set }
         public Login()
         {
             InitializeComponent();
@@ -64,17 +63,18 @@ namespace E_LearningApplication
             } else
             {
                 sqlConnection = new SqlConnection(stringConnect);
-                sql = @"SELECT * FROM Users WHERE Username = N'" +textUserName.Text+ "' AND N'" + textPassword.Text + "'";
+                sql = @"SELECT * FROM Users WHERE Username = N'" +textUserName.Text+ "' AND Password = N'" + textPassword.Text + "'";
                 sqlConnection.Open();
                 sqlCommand = new SqlCommand(sql, sqlConnection);
                 SqlDataReader d = sqlCommand.ExecuteReader();
 
                 if (d.Read() == true)
                 {
-                    int userID = (int)d["UserID"];
+                    userID = (int)d["UserID"];
                     sqlConnection.Close();
+                    Home home = new Home();
+                    home.ShowDialog();
                     this.Close();
-                    OnLoginSuccess?.Invoke(userID);
                 } else
                 {
                     MessageBox.Show("Invalid Information, Login Failed!", "Please Re-Login!", MessageBoxButtons.OK, MessageBoxIcon.Error);
