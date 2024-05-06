@@ -14,7 +14,7 @@ namespace E_LearningApplication
 {
     public partial class Home : Form
     {
-        private int currentUserID;
+        int userID = Login.userID; // Information about user who are logged in
         string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
@@ -25,7 +25,7 @@ namespace E_LearningApplication
             using (sqlConnection = new SqlConnection(stringConnect))
             {
                 sqlConnection.Open();
-                sql = @"SELECT COUNT(*) FROM Users WHERE Username = @UserID AND Role = @Role";
+                sql = @"SELECT COUNT(*) FROM Users WHERE UserID = @UserID AND Role = @Role";
                 using(sqlCommand = new SqlCommand(sql, sqlConnection))
                 {
                     sqlCommand.Parameters.AddWithValue("@UserID", userID);
@@ -36,7 +36,7 @@ namespace E_LearningApplication
             }
         }
 
-        private void checkPermission(int userID)
+        private void checkPermission()
         {
             if(!hasPermission(userID, "Admin"))
             {
@@ -51,11 +51,10 @@ namespace E_LearningApplication
                 myCourses.Visible = false;
             }
         }
-        public Home(int userID)
+        public Home()
         {
             InitializeComponent();
-            currentUserID = userID;
-            checkPermission(currentUserID);
+            checkPermission(); // check permission to change how strip menu look depend on user role
         }
 
         private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
