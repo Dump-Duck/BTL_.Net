@@ -32,3 +32,22 @@ E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\
 E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Forum.resources
 E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Practices.resources
 E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.CoursesManagement.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.exe.config
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.exe
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\bin\Debug\E-LearningApplication.pdb
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.AssemblyReference.cache
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Courses.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.CoursesManagement.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Examing.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Forum.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Home.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Lessons.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Login.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Properties.Resources.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.SignUp.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Practices.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.UserManagement.resources
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.GenerateResource.cache
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.CoreCompileInputs.cache
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.exe
+C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.pdb
