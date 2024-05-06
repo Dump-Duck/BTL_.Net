@@ -13,7 +13,7 @@ namespace E_LearningApplication
 {
     public partial class Login : Form
     {
-        public static int userID { get; private set }
+        public static int userID { get; private set; }
         public Login()
         {
             InitializeComponent();
