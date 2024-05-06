@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,14 +13,80 @@ namespace E_LearningApplication
 {
     public partial class Login : Form
     {
+        public delegate void LoginSuccessHandler(int userID);
+        public event LoginSuccessHandler OnLoginSuccess;
         public Login()
         {
             InitializeComponent();
         }
 
+        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
+        string sql;
+        SqlConnection sqlConnection;
+        SqlCommand sqlCommand;
+
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SignUp signUp = new SignUp();
+            signUp.ShowDialog();
+            this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textPassword.PasswordChar == '\0')
+            {
+                button2.BringToFront();
+                textPassword.PasswordChar = '*';
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textPassword.PasswordChar == '*')
+            {
+                button1.BringToFront();
+                textPassword.PasswordChar = '\0';
+            }
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            if (textUserName.Text == null || textPassword.Text == null)
+            {
+                MessageBox.Show("Login Failed!", "Please full fill the form information!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            } else
+            {
+                sqlConnection = new SqlConnection(stringConnect);
+                sql = @"SELECT * FROM Users WHERE Username = N'" +textUserName.Text+ "' AND N'" + textPassword.Text + "'";
+                sqlConnection.Open();
+                sqlCommand = new SqlCommand(sql, sqlConnection);
+                SqlDataReader d = sqlCommand.ExecuteReader();
+
+                if (d.Read() == true)
+                {
+                    int userID = (int)d["UserID"];
+                    sqlConnection.Close();
+                    this.Close();
+                    OnLoginSuccess?.Invoke(userID);
+                } else
+                {
+                    MessageBox.Show("Invalid Information, Login Failed!", "Please Re-Login!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    textUserName.Text = "";
+                    textPassword.Text = "";
+                    textUserName.Focus();
+                    if(sqlConnection != null && sqlConnection.State == ConnectionState.Closed)
+                    {
+                        sqlConnection.Open();
+                    }
+                }
+            }
         }
     }
 }

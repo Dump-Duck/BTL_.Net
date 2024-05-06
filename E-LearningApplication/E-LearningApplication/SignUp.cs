@@ -35,5 +35,31 @@ namespace E_LearningApplication
             sqlConnection.Close();
             MessageBox.Show("Sign up success!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.ShowDialog();
+            this.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(textPassword.PasswordChar == '\0')
+            {
+                button2.BringToFront();
+                textPassword.PasswordChar = '*';
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if(textPassword.PasswordChar == '*')
+            {
+                button1.BringToFront();
+                textPassword.PasswordChar = '\0';
+            }
+        }
     }
 }
