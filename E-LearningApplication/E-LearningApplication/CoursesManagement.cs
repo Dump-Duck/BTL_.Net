@@ -13,9 +13,12 @@ namespace E_LearningApplication
 {
     public partial class CoursesManagement : Form
     {
+
+        public static CoursesManagement instance;
         public CoursesManagement()
         {
             InitializeComponent();
+            instance = this;
         }
 
         // them chuoi ket not 
@@ -103,6 +106,14 @@ namespace E_LearningApplication
             sqlConnection.Close();
             MessageBox.Show("Course Deleted!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
             displayDataCourses();
+        }
+
+
+        private void btnAddLesson_Click(object sender, EventArgs e)
+        {
+            LessonsManagement lessonsManagement = new LessonsManagement();
+            LessonsManagement.instance.courseID = int.Parse(textBoxCourseID.Text);
+            lessonsManagement.Show();
         }
     }
 }

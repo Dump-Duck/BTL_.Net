@@ -16,7 +16,7 @@ namespace E_LearningApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CoursesManagement());
+            Application.Run(new UserManagement());
         }
     }
 }

@@ -9,8 +9,8 @@
     <Shape ID="DesignTable:Users" ZOrder="1" X="1685" Y="495" Height="286" Width="176" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="235" />
     <Shape ID="DesignTable:Comments" ZOrder="17" X="1364" Y="655" Height="172" Width="207" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:Courses" ZOrder="16" X="1600" Y="155" Height="210" Width="190" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="159" />
-    <Shape ID="DesignTable:ForumPosts" ZOrder="4" X="1404" Y="425" Height="172" Width="213" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
-    <Shape ID="DesignTable:Lessons" ZOrder="15" X="1359" Y="180" Height="191" Width="189" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
+    <Shape ID="DesignTable:ForumPosts" ZOrder="4" X="1404" Y="414" Height="191" Width="213" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
+    <Shape ID="DesignTable:Lessons" ZOrder="15" X="2449" Y="214" Height="191" Width="189" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
     <Shape ID="DesignTable:TestResults" ZOrder="3" X="2137" Y="233" Height="191" Width="210" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="140" />
     <Shape ID="DesignTable:Tests" ZOrder="2" X="2139" Y="496" Height="172" Width="174" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:UserCourses" ZOrder="14" X="1835" Y="194" Height="153" Width="216" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="102" />
@@ -20,7 +20,7 @@
       <RoutePoints>
         <Point>
           <X>1487</X>
-          <Y>597</Y>
+          <Y>605</Y>
         </Point>
         <Point>
           <X>1487</X>
@@ -59,12 +59,12 @@
     <Connector ID="DesignRelation:FK_Lessons_Courses" ZOrder="10" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>1600</X>
-          <Y>271</Y>
+          <X>1790</X>
+          <Y>289</Y>
         </Point>
         <Point>
-          <X>1548</X>
-          <Y>271</Y>
+          <X>2449</X>
+          <Y>289</Y>
         </Point>
       </RoutePoints>
     </Connector>

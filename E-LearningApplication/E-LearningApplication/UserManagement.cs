@@ -16,6 +16,13 @@ namespace E_LearningApplication
         public UserManagement()
         {
             InitializeComponent();
+            InitializeDataGridView();
+        }
+
+        public void InitializeDataGridView()
+        {
+            userDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            userDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         // them chuoi ket not 
@@ -47,17 +54,18 @@ namespace E_LearningApplication
             this.Show();
         }
 
-        private void forumToolStripMenuItem_Click(object sender, EventArgs e)
+        private void blogPostToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Forum forum = new Forum();
-            forum.ShowDialog();
-            this.Show();
+
+        }
+
+        private void blogManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void userManagementShow()
         {
-            sqlConnection = new SqlConnection(stringConnect);
             sqlConnection.Open();
             sql = @"SELECT * FROM Users";
             sqlCommand = new SqlCommand(sql, sqlConnection);
@@ -71,7 +79,44 @@ namespace E_LearningApplication
 
         private void UserManagement_Load(object sender, EventArgs e)
         {
+            sqlConnection = new SqlConnection(stringConnect);
             this.userManagementShow();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            sql = @"Update Users Set Username = N'" + username_txt.Text + @"', Password = N'" + password_txt.Text + @"', Email = N'" + email_txt.Text + @"', Fullname = N'" + fullname_txt.Text + @"', Level = N'" + levelBox.Text + @"', Role = N'" + roleBox.Text + @"'
+                    WHERE UserID = N'" + userID_txt.Text + @"' ";
+            sqlConnection.Open();
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("User update success!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            userManagementShow();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            sqlConnection.Open();
+            sql = @"Delete FROM Users Where (UserID = N'" + userID_txt.Text + @"')";
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("User Deleted!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            userManagementShow();
+        }
+
+        private void userDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            userID_txt.Text = userDataGridView.SelectedRows[0].Cells["UserID"].Value.ToString();
+            username_txt.Text = userDataGridView.SelectedRows[0].Cells["Username"].Value.ToString();
+            password_txt.Text = userDataGridView.SelectedRows[0].Cells["Password"].Value.ToString();
+            email_txt.Text = userDataGridView.SelectedRows[0].Cells["Email"].Value.ToString();
+            fullname_txt.Text = userDataGridView.SelectedRows[0].Cells["Fullname"].Value.ToString();
+            dateOfBirth_txt.Text = userDataGridView.SelectedRows[0].Cells["DateOfBirth"].Value.ToString();
+            avatar.Text = userDataGridView.SelectedRows[0].Cells["Avatar"].Value.ToString();
+            levelBox.Text = userDataGridView.SelectedRows[0].Cells["Level"].Value.ToString();
+            roleBox.Text = userDataGridView.SelectedRows[0].Cells["Role"].Value.ToString();
         }
     }
 }

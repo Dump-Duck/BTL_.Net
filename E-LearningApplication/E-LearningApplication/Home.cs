@@ -35,10 +35,10 @@ namespace E_LearningApplication
 
         private void forumToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
+/*            this.Hide();
             Forum forum = new Forum();
             forum.ShowDialog();
-            this.Show();
+            this.Show();*/
 
         }
 

@@ -29,6 +29,8 @@ E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\
 E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.csproj.CoreCompileInputs.cache
 E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.exe
 E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.pdb
-E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Forum.resources
 E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.Practices.resources
 E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.CoursesManagement.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.LessonsManagement.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.ForumPost.resources
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.ForumView.resources

@@ -69,11 +69,17 @@
     <Compile Include="Examing.Designer.cs">
       <DependentUpon>Examing.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forum.cs">
+    <Compile Include="ForumPost.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forum.Designer.cs">
-      <DependentUpon>Forum.cs</DependentUpon>
+    <Compile Include="ForumPost.Designer.cs">
+      <DependentUpon>ForumPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForumView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForumView.Designer.cs">
+      <DependentUpon>ForumView.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -86,6 +92,12 @@
     </Compile>
     <Compile Include="Lessons.Designer.cs">
       <DependentUpon>Lessons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LessonsManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LessonsManagement.Designer.cs">
+      <DependentUpon>LessonsManagement.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -128,14 +140,20 @@
     <EmbeddedResource Include="Examing.resx">
       <DependentUpon>Examing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forum.resx">
-      <DependentUpon>Forum.cs</DependentUpon>
+    <EmbeddedResource Include="ForumPost.resx">
+      <DependentUpon>ForumPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForumView.resx">
+      <DependentUpon>ForumView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lessons.resx">
       <DependentUpon>Lessons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LessonsManagement.resx">
+      <DependentUpon>LessonsManagement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
