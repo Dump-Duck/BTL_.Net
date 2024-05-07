@@ -42,7 +42,7 @@ namespace E_LearningApplication
             {
                 usersManagement.Visible = false;
             }
-            if(!hasPermission(userID, "Teacher"))
+            if(!hasPermission(userID, "Teacher") && !hasPermission(userID, "Admin"))
             {
                 coursesManagement.Visible = false;
             }
