@@ -43,8 +43,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.levelSelectBox = new System.Windows.Forms.ComboBox();
             this.roleSelectBox = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.hidePassBtn = new System.Windows.Forms.Button();
+            this.showPassBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,10 +52,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(937, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(511, 7);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 38);
+            this.label1.Size = new System.Drawing.Size(77, 24);
             this.label1.TabIndex = 16;
             this.label1.Text = "Sign Up";
             // 
@@ -63,41 +63,41 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(730, 78);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(398, 42);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 29);
+            this.label2.Size = new System.Drawing.Size(88, 17);
             this.label2.TabIndex = 17;
             this.label2.Text = "User Name";
             // 
             // textUserName
             // 
-            this.textUserName.Location = new System.Drawing.Point(735, 127);
-            this.textUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textUserName.Location = new System.Drawing.Point(401, 69);
+            this.textUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textUserName.Multiline = true;
             this.textUserName.Name = "textUserName";
-            this.textUserName.Size = new System.Drawing.Size(385, 58);
+            this.textUserName.Size = new System.Drawing.Size(212, 33);
             this.textUserName.TabIndex = 18;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(730, 216);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(398, 117);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 29);
+            this.label3.Size = new System.Drawing.Size(77, 17);
             this.label3.TabIndex = 19;
             this.label3.Text = "Password";
             // 
             // textPassword
             // 
-            this.textPassword.Location = new System.Drawing.Point(735, 270);
-            this.textPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textPassword.Location = new System.Drawing.Point(401, 146);
+            this.textPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textPassword.Multiline = true;
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '*';
-            this.textPassword.Size = new System.Drawing.Size(385, 58);
+            this.textPassword.Size = new System.Drawing.Size(212, 33);
             this.textPassword.TabIndex = 20;
             // 
             // btnSignIn
@@ -105,10 +105,10 @@
             this.btnSignIn.BackColor = System.Drawing.Color.DarkGray;
             this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.Location = new System.Drawing.Point(1012, 652);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignIn.Location = new System.Drawing.Point(552, 353);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(224, 85);
+            this.btnSignIn.Size = new System.Drawing.Size(122, 46);
             this.btnSignIn.TabIndex = 21;
             this.btnSignIn.Text = "Sign In";
             this.btnSignIn.UseVisualStyleBackColor = false;
@@ -119,10 +119,10 @@
             this.btnSignUp.BackColor = System.Drawing.Color.DarkGray;
             this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.Location = new System.Drawing.Point(735, 652);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSignUp.Location = new System.Drawing.Point(401, 353);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(224, 85);
+            this.btnSignUp.Size = new System.Drawing.Size(122, 46);
             this.btnSignUp.TabIndex = 22;
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.UseVisualStyleBackColor = false;
@@ -132,30 +132,30 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(730, 349);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(398, 189);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 29);
+            this.label4.Size = new System.Drawing.Size(47, 17);
             this.label4.TabIndex = 23;
             this.label4.Text = "Email";
             // 
             // textEmail
             // 
-            this.textEmail.Location = new System.Drawing.Point(735, 399);
-            this.textEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textEmail.Location = new System.Drawing.Point(401, 216);
+            this.textEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textEmail.Multiline = true;
             this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(385, 58);
+            this.textEmail.Size = new System.Drawing.Size(212, 33);
             this.textEmail.TabIndex = 24;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(732, 484);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(399, 262);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 29);
+            this.label5.Size = new System.Drawing.Size(47, 17);
             this.label5.TabIndex = 25;
             this.label5.Text = "Level";
             // 
@@ -163,20 +163,20 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1006, 484);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(549, 262);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 29);
+            this.label6.Size = new System.Drawing.Size(41, 17);
             this.label6.TabIndex = 26;
             this.label6.Text = "Role";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(726, 772);
+            this.pictureBox1.Size = new System.Drawing.Size(396, 418);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
@@ -188,10 +188,10 @@
             "Basic",
             "Independent",
             "Proficient"});
-            this.levelSelectBox.Location = new System.Drawing.Point(737, 534);
-            this.levelSelectBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.levelSelectBox.Location = new System.Drawing.Point(402, 289);
+            this.levelSelectBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.levelSelectBox.Name = "levelSelectBox";
-            this.levelSelectBox.Size = new System.Drawing.Size(165, 32);
+            this.levelSelectBox.Size = new System.Drawing.Size(92, 21);
             this.levelSelectBox.TabIndex = 28;
             // 
             // roleSelectBox
@@ -200,45 +200,47 @@
             this.roleSelectBox.Items.AddRange(new object[] {
             "Teacher",
             "Student"});
-            this.roleSelectBox.Location = new System.Drawing.Point(1012, 534);
-            this.roleSelectBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.roleSelectBox.Location = new System.Drawing.Point(552, 289);
+            this.roleSelectBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roleSelectBox.Name = "roleSelectBox";
-            this.roleSelectBox.Size = new System.Drawing.Size(165, 32);
+            this.roleSelectBox.Size = new System.Drawing.Size(92, 21);
             this.roleSelectBox.TabIndex = 29;
             // 
-            // button1
+            // hidePassBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1070, 280);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(40, 39);
-            this.button1.TabIndex = 30;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.hidePassBtn.BackColor = System.Drawing.Color.White;
+            this.hidePassBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hidePassBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hidePassBtn.Image = ((System.Drawing.Image)(resources.GetObject("hidePassBtn.Image")));
+            this.hidePassBtn.Location = new System.Drawing.Point(584, 152);
+            this.hidePassBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hidePassBtn.Name = "hidePassBtn";
+            this.hidePassBtn.Size = new System.Drawing.Size(22, 21);
+            this.hidePassBtn.TabIndex = 30;
+            this.hidePassBtn.UseVisualStyleBackColor = false;
+            this.hidePassBtn.Click += new System.EventHandler(this.hidePassBtn_Click);
             // 
-            // button2
+            // showPassBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1070, 280);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 39);
-            this.button2.TabIndex = 31;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.showPassBtn.BackColor = System.Drawing.Color.White;
+            this.showPassBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.showPassBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.showPassBtn.Image = ((System.Drawing.Image)(resources.GetObject("showPassBtn.Image")));
+            this.showPassBtn.Location = new System.Drawing.Point(584, 152);
+            this.showPassBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showPassBtn.Name = "showPassBtn";
+            this.showPassBtn.Size = new System.Drawing.Size(22, 21);
+            this.showPassBtn.TabIndex = 31;
+            this.showPassBtn.UseVisualStyleBackColor = false;
+            this.showPassBtn.Click += new System.EventHandler(this.showPassBtn_Click);
             // 
             // SignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1263, 764);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(689, 414);
+            this.Controls.Add(this.showPassBtn);
+            this.Controls.Add(this.hidePassBtn);
             this.Controls.Add(this.roleSelectBox);
             this.Controls.Add(this.levelSelectBox);
             this.Controls.Add(this.pictureBox1);
@@ -253,7 +255,7 @@
             this.Controls.Add(this.textUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SignUp";
             this.Text = "SignUp";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -278,7 +280,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox levelSelectBox;
         private System.Windows.Forms.ComboBox roleSelectBox;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button hidePassBtn;
+        private System.Windows.Forms.Button showPassBtn;
     }
 }

@@ -38,26 +38,23 @@ namespace E_LearningApplication
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Login login = new Login();
-            login.ShowDialog();
-            this.Show();
+            this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void hidePassBtn_Click(object sender, EventArgs e)
         {
             if(textPassword.PasswordChar == '\0')
             {
-                button2.BringToFront();
+                showPassBtn.BringToFront();
                 textPassword.PasswordChar = '*';
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void showPassBtn_Click(object sender, EventArgs e)
         {
             if(textPassword.PasswordChar == '*')
             {
-                button1.BringToFront();
+                hidePassBtn.BringToFront();
                 textPassword.PasswordChar = '\0';
             }
         }

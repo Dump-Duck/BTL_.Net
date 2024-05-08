@@ -29,13 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.coursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.practiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.forumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blogPostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blogManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.userID_txt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -60,66 +53,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.email_txt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.menuStrip.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // menuStrip
-            // 
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
-            this.coursesToolStripMenuItem,
-            this.practiceToolStripMenuItem,
-            this.forumToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(1220, 24);
-            this.menuStrip.TabIndex = 13;
-            this.menuStrip.Text = "menuStrip";
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.homeToolStripMenuItem.Text = "Home";
-            // 
-            // coursesToolStripMenuItem
-            // 
-            this.coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
-            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.coursesToolStripMenuItem.Text = "Courses";
-            // 
-            // practiceToolStripMenuItem
-            // 
-            this.practiceToolStripMenuItem.Name = "practiceToolStripMenuItem";
-            this.practiceToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.practiceToolStripMenuItem.Text = "Practices";
-            // 
-            // forumToolStripMenuItem
-            // 
-            this.forumToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.blogPostToolStripMenuItem,
-            this.blogManagementToolStripMenuItem});
-            this.forumToolStripMenuItem.Name = "forumToolStripMenuItem";
-            this.forumToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.forumToolStripMenuItem.Text = "Forum";
-            // 
-            // blogPostToolStripMenuItem
-            // 
-            this.blogPostToolStripMenuItem.Name = "blogPostToolStripMenuItem";
-            this.blogPostToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.blogPostToolStripMenuItem.Text = "Blog Post";
-            this.blogPostToolStripMenuItem.Click += new System.EventHandler(this.blogPostToolStripMenuItem_Click);
-            // 
-            // blogManagementToolStripMenuItem
-            // 
-            this.blogManagementToolStripMenuItem.Name = "blogManagementToolStripMenuItem";
-            this.blogManagementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.blogManagementToolStripMenuItem.Text = "Blog View";
-            this.blogManagementToolStripMenuItem.Click += new System.EventHandler(this.blogManagementToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -132,6 +68,7 @@
             this.userID_txt.Location = new System.Drawing.Point(11, 159);
             this.userID_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.userID_txt.Name = "userID_txt";
+            this.userID_txt.ReadOnly = true;
             this.userID_txt.Size = new System.Drawing.Size(52, 24);
             this.userID_txt.TabIndex = 57;
             // 
@@ -245,7 +182,7 @@
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel1.Controls.Add(this.ManageUsers);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 24);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1220, 86);
@@ -387,12 +324,9 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.menuStrip);
             this.Name = "UserManagement";
             this.Text = "UserManagement";
             this.Load += new System.EventHandler(this.UserManagement_Load);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).EndInit();
@@ -402,14 +336,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem coursesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem practiceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem forumToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blogPostToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blogManagementToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.TextBox userID_txt;
         private System.Windows.Forms.Label label6;

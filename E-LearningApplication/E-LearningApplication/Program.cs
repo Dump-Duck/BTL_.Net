@@ -16,7 +16,12 @@ namespace E_LearningApplication
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Login login = new Login();
+            Application.Run(login);
+            if (login.IsLoggedIn)
+            {
+                Application.Run(new Home());
+            }
         }
     }
 }

@@ -14,6 +14,9 @@ namespace E_LearningApplication
     public partial class Login : Form
     {
         public static int userID { get; private set; }
+
+        public bool IsLoggedIn { get; set; }
+
         public Login()
         {
             InitializeComponent();
@@ -37,20 +40,20 @@ namespace E_LearningApplication
             this.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void hidePassBtn_Click(object sender, EventArgs e)
         {
             if(textPassword.PasswordChar == '\0')
             {
-                button2.BringToFront();
+                showPassbtn.BringToFront();
                 textPassword.PasswordChar = '*';
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void showPassBtn_Click(object sender, EventArgs e)
         {
             if (textPassword.PasswordChar == '*')
             {
-                button1.BringToFront();
+                hidePassBtn.BringToFront();
                 textPassword.PasswordChar = '\0';
             }
         }
@@ -72,9 +75,8 @@ namespace E_LearningApplication
                 {
                     userID = (int)d["UserID"];
                     sqlConnection.Close();
-                    Home home = new Home();
-                    home.ShowDialog();
                     this.Close();
+                    IsLoggedIn = true;
                 } else
                 {
                     MessageBox.Show("Invalid Information, Login Failed!", "Please Re-Login!", MessageBoxButtons.OK, MessageBoxIcon.Error);

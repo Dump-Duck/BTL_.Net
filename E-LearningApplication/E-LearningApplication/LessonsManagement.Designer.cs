@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             this.ManageCourses = new System.Windows.Forms.Label();
             this.textBoxLessonID = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBoxContent = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxLessonName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -71,45 +69,27 @@
             // textBoxLessonID
             // 
             this.textBoxLessonID.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLessonID.Location = new System.Drawing.Point(33, 163);
+            this.textBoxLessonID.Location = new System.Drawing.Point(33, 213);
             this.textBoxLessonID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxLessonID.Name = "textBoxLessonID";
+            this.textBoxLessonID.ReadOnly = true;
             this.textBoxLessonID.Size = new System.Drawing.Size(292, 24);
             this.textBoxLessonID.TabIndex = 57;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(29, 126);
+            this.label6.Location = new System.Drawing.Point(29, 176);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 56;
             this.label6.Text = "LessonID";
             // 
-            // textBoxContent
-            // 
-            this.textBoxContent.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxContent.Location = new System.Drawing.Point(34, 308);
-            this.textBoxContent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBoxContent.Name = "textBoxContent";
-            this.textBoxContent.Size = new System.Drawing.Size(293, 24);
-            this.textBoxContent.TabIndex = 54;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(30, 270);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 13);
-            this.label8.TabIndex = 52;
-            this.label8.Text = "Content";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(30, 198);
+            this.label9.Location = new System.Drawing.Point(30, 248);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(72, 13);
@@ -119,7 +99,7 @@
             // textBoxLessonName
             // 
             this.textBoxLessonName.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxLessonName.Location = new System.Drawing.Point(33, 235);
+            this.textBoxLessonName.Location = new System.Drawing.Point(33, 285);
             this.textBoxLessonName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxLessonName.Name = "textBoxLessonName";
             this.textBoxLessonName.Size = new System.Drawing.Size(292, 24);
@@ -146,7 +126,7 @@
             this.CreateAt});
             this.listViewDataLessons.HideSelection = false;
             this.listViewDataLessons.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.listViewDataLessons.Location = new System.Drawing.Point(389, 126);
             this.listViewDataLessons.Name = "listViewDataLessons";
             this.listViewDataLessons.Size = new System.Drawing.Size(742, 284);
@@ -277,8 +257,6 @@
             this.ClientSize = new System.Drawing.Size(1147, 523);
             this.Controls.Add(this.textBoxLessonID);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBoxContent);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxLessonName);
             this.Controls.Add(this.label5);
@@ -305,8 +283,6 @@
         private System.Windows.Forms.Label ManageCourses;
         private System.Windows.Forms.TextBox textBoxLessonID;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBoxContent;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxLessonName;
         private System.Windows.Forms.Label label5;

@@ -208,6 +208,7 @@
             this.textBoxCourseID.Location = new System.Drawing.Point(17, 172);
             this.textBoxCourseID.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxCourseID.Name = "textBoxCourseID";
+            this.textBoxCourseID.ReadOnly = true;
             this.textBoxCourseID.Size = new System.Drawing.Size(292, 24);
             this.textBoxCourseID.TabIndex = 37;
             // 

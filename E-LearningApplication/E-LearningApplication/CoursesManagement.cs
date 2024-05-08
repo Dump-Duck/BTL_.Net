@@ -15,12 +15,14 @@ namespace E_LearningApplication
     {
 
         public static CoursesManagement instance;
+
         public CoursesManagement()
         {
             InitializeComponent();
             instance = this;
         }
 
+        int userID = Login.userID;
         // them chuoi ket not 
         string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
@@ -74,7 +76,7 @@ namespace E_LearningApplication
             listViewDataCourses.Items.Clear();
             sqlConnection.Open();
             sql = @"INSERT INTO Courses(CourseName, Description, Level, CreateBy, UpdateAt, CreateAt)
-                  VALUES (N'" + textBoxCourseName.Text + @"', N'" + textBoxDescriptionCourse.Text + @"', N'" + comboBoxLevelCourse.Text + @"',N'" + textBoxCreateBy.Text + @"', GETDATE(), GETDATE())";
+                  VALUES (N'" + textBoxCourseName.Text + @"', N'" + textBoxDescriptionCourse.Text + @"', N'" + comboBoxLevelCourse.Text + @"',N'" + userID + @"', GETDATE(), GETDATE())";
             sqlCommand = new SqlCommand(sql, sqlConnection);
             sqlCommand.ExecuteNonQuery();
             sqlConnection.Close();

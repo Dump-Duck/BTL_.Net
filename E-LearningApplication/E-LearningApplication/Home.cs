@@ -86,5 +86,29 @@ namespace E_LearningApplication
         {
             MessageBox.Show("This is home page!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void coursesManagement_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            CoursesManagement coursesManagement = new CoursesManagement();
+            coursesManagement.ShowDialog();
+            this.Show();
+        }
+
+        private void usersManagement_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserManagement userManagement = new UserManagement();
+            userManagement.ShowDialog();
+            this.Show();
+        }
+
+        private void examManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ExamingManagement examManagement = new ExamingManagement();
+            examManagement.ShowDialog();
+            this.Show();
+        }
     }
 }
