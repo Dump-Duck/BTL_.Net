@@ -15,7 +15,7 @@ namespace E_LearningApplication
     public partial class Home : Form
     {
         int userID = Login.userID; // Information about user who are logged in
-        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
+        string stringConnect = @"Data Source=DESKTOP-6NPQFM8;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
         SqlCommand sqlCommand;
@@ -108,6 +108,14 @@ namespace E_LearningApplication
             this.Hide();
             ExamingManagement examManagement = new ExamingManagement();
             examManagement.ShowDialog();
+            this.Show();
+        }
+
+        private void myCourses_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyCourses myCourses = new MyCourses();
+            myCourses.ShowDialog();
             this.Show();
         }
     }

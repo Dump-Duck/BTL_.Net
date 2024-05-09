@@ -22,7 +22,7 @@ namespace E_LearningApplication
             InitializeComponent();
         }
 
-        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
+        string stringConnect = @"Data Source=DESKTOP-6NPQFM8;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
         SqlCommand sqlCommand;
@@ -75,8 +75,8 @@ namespace E_LearningApplication
                 {
                     userID = (int)d["UserID"];
                     sqlConnection.Close();
-                    this.Close();
                     IsLoggedIn = true;
+                    this.Close();
                 } else
                 {
                     MessageBox.Show("Invalid Information, Login Failed!", "Please Re-Login!", MessageBoxButtons.OK, MessageBoxIcon.Error);
