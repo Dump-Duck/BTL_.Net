@@ -22,7 +22,7 @@ namespace E_LearningApplication
             InitializeComponent();
         }
 
-        string stringConnect = @"Data Source=DESKTOP-6NPQFM8;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
+        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
         SqlCommand sqlCommand;

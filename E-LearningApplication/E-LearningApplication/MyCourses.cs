@@ -14,7 +14,7 @@ namespace E_LearningApplication
     public partial class MyCourses : Form
     {
         int userID = Login.userID;
-        string stringConnect = @"Data Source=DESKTOP-6NPQFM8;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
+        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
         SqlCommand sqlCommand;
@@ -68,6 +68,18 @@ namespace E_LearningApplication
             courses.ShowDialog();
             this.Show();
             nullCourse.LinkVisited = true;
+        }
+
+        private void coursesDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+
+                int courseID = Convert.ToInt32(coursesDataGridView.Rows[e.RowIndex].Cells["CourseID"].Value);
+
+                Lessons lessonsForm = new Lessons(courseID);
+                lessonsForm.ShowDialog();
+            }
         }
     }
 }

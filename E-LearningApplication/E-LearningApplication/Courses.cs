@@ -14,7 +14,7 @@ namespace E_LearningApplication
     public partial class Courses : Form
     {
         int userID = Login.userID;
-        string stringConnect = @"Data Source=DESKTOP-6NPQFM8;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
+        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         SqlConnection sqlConnection;
 
         public Courses()
@@ -46,10 +46,10 @@ namespace E_LearningApplication
                 foreach (DataRow row in tableUserCourses.Rows)
                 {
                     int CourseID = (int)row["CourseID"];
-                    DataRow[] rowsRemove = tableUserCourses.Select("CourseID = " + CourseID);
+                    DataRow[] rowsRemove = tableAllCourses.Select("CourseID = " + CourseID);
                     foreach (DataRow rowRemove in rowsRemove)
                     {
-                        tableUserCourses.Rows.Remove(rowRemove);
+                        tableAllCourses.Rows.Remove(rowRemove);
                     }
                 }
 
@@ -77,6 +77,7 @@ namespace E_LearningApplication
             {
                 int courseID = Convert.ToInt32(coursesDataGridView.Rows[e.RowIndex].Cells["CourseID"].Value);
                 enrollCourse(courseID);
+                loadAllCourse();
             }
         }
 
@@ -86,7 +87,7 @@ namespace E_LearningApplication
             {
                 sqlConnection.Open();
 
-                string sqlEnrollCourse = @"INSERT INTO UserCourses (UserID, CourseID, EnrolledAt) VALUE (@UserID, @CourseID, @EnrolledAt)";
+                string sqlEnrollCourse = @"INSERT INTO UserCourses (UserID, CourseID, EnrolledAt) VALUES (@UserID, @CourseID, @EnrolledAt)";
                 SqlCommand cmdEnrolledCourse = new SqlCommand(sqlEnrollCourse, sqlConnection);
                 cmdEnrolledCourse.Parameters.AddWithValue("@UserID", userID);
                 cmdEnrolledCourse.Parameters.AddWithValue("@CourseID", courseID);

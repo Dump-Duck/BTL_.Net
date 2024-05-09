@@ -68,3 +68,4 @@ C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningAppl
 C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.application
 C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.exe
 C:\Users\Nguyễn Nam\Source\Repos\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E-LearningApplication.pdb
+E:\Document\.Net\BTL_.Net\E-LearningApplication\E-LearningApplication\obj\Debug\E_LearningApplication.MyCourses.resources
