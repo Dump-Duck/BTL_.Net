@@ -38,7 +38,7 @@ namespace E_LearningApplication
         {
             listViewDataExams.Items.Clear();
             sqlConnection.Open();
-            sql = @"SELECT * FROM Tests";
+            sql = @"SELECT * FROM Tests WHERE UserID = N'" + userID + @"'";
             sqlCommand = new SqlCommand(sql, sqlConnection);
             dataReader = sqlCommand.ExecuteReader();
 

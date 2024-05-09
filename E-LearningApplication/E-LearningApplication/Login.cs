@@ -27,10 +27,6 @@ namespace E_LearningApplication
         SqlConnection sqlConnection;
         SqlCommand sqlCommand;
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {

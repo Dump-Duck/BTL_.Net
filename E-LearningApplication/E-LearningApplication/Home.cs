@@ -15,7 +15,7 @@ namespace E_LearningApplication
     public partial class Home : Form
     {
         int userID = Login.userID; // Information about user who are logged in
-        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;;Encrypt=False";
+        string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
         SqlCommand sqlCommand;
@@ -45,6 +45,7 @@ namespace E_LearningApplication
             if(!hasPermission(userID, "Teacher") && !hasPermission(userID, "Admin"))
             {
                 coursesManagement.Visible = false;
+                examManagementToolStripMenuItem.Visible = false;
             }
             if(!hasPermission(userID, "Student"))
             {
@@ -73,14 +74,6 @@ namespace E_LearningApplication
             this.Show();
         }
 
-        private void forumToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-/*            this.Hide();
-            Forum forum = new Forum();
-            forum.ShowDialog();
-            this.Show();*/
-
-        }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -116,6 +109,56 @@ namespace E_LearningApplication
             this.Hide();
             MyCourses myCourses = new MyCourses();
             myCourses.ShowDialog();
+            this.Show();
+        }
+
+        private void myCoursesBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MyCourses myCourses = new MyCourses();
+            myCourses.ShowDialog();
+            this.Show();
+        }
+
+        private void practiceBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Practices practices = new Practices();
+            practices.ShowDialog();
+            this.Show();
+        }
+
+        private void resultBtn_Click(object sender, EventArgs e)
+        {
+            if (!hasPermission(userID, "Student"))
+            {
+                this.Hide();
+                TeacherResultManagement teacherResultManagement = new TeacherResultManagement();
+                teacherResultManagement.ShowDialog();
+                this.Show();
+            }
+            if (!hasPermission(userID, "Teacher") && !hasPermission(userID, "Admin"))
+            {
+                this.Hide();
+                StudentResult studentResult = new StudentResult();
+                studentResult.ShowDialog();
+                this.Show();
+            }
+        }
+
+        private void blogViewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ForumView forumView = new ForumView();
+            forumView.ShowDialog();
+            this.Show();
+        }
+
+        private void blogPostToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ForumPost forumPost = new ForumPost();
+            forumPost.ShowDialog();
             this.Show();
         }
     }

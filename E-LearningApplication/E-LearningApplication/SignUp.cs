@@ -27,13 +27,16 @@ namespace E_LearningApplication
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             sqlConnection = new SqlConnection(stringConnect);
-            sql = @"INSERT INTO Users(Username,Password,Email,Level,Role)
-                            VALUES (N'"+textUserName.Text+@"', N'"+textPassword.Text+@"', N'"+textEmail.Text+@"', N'"+levelSelectBox.Text+@"', N'"+roleSelectBox.Text+@"')";
+            sql = @"INSERT INTO Users(Username,Password,Email,Level,Role,UpdateAt, CreateAt)
+                            VALUES (N'"+textUserName.Text+@"', N'"+textPassword.Text+@"', N'"+textEmail.Text+@"', N'"+levelSelectBox.Text+@"', N'"+roleSelectBox.Text+ @"', GETDATE(), GETDATE())";
             sqlConnection.Open();
             sqlCommand = new SqlCommand(sql, sqlConnection);
             sqlCommand.ExecuteNonQuery();
             sqlConnection.Close();
             MessageBox.Show("Sign up success!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            textUserName.Clear();
+            textPassword.Clear();
+            textEmail.Clear();
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
