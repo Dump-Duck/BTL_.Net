@@ -45,6 +45,7 @@ namespace E_LearningApplication
             if(!hasPermission(userID, "Teacher") && !hasPermission(userID, "Admin"))
             {
                 coursesManagement.Visible = false;
+                examManagementToolStripMenuItem.Visible = false;
             }
             if(!hasPermission(userID, "Student"))
             {
@@ -73,15 +74,6 @@ namespace E_LearningApplication
             this.Show();
         }
 
-        private void forumToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-/*            this.Hide();
-            Forum forum = new Forum();
-            forum.ShowDialog();
-            this.Show();*/
-
-        }
-
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This is home page!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -108,6 +100,44 @@ namespace E_LearningApplication
             this.Hide();
             ExamingManagement examManagement = new ExamingManagement();
             examManagement.ShowDialog();
+            this.Show();
+        }
+
+        private void btnPractice_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Practices practices = new Practices();
+            practices.ShowDialog();
+            this.Show();
+        }
+
+        private void btnResult_Click(object sender, EventArgs e)
+        {
+            //Student
+            /*            this.Hide();
+                        StudentResult studentResult = new StudentResult();
+                        studentResult.ShowDialog();
+                        this.Show();*/
+            //admin hoặc teacher
+            this.Hide();
+            TeacherResultManagement teacherResultManagement = new TeacherResultManagement();
+            teacherResultManagement.ShowDialog();
+            this.Show();
+        }
+
+        private void blogViewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ForumView forumView = new ForumView();
+            forumView.ShowDialog();
+            this.Show();
+        }
+
+        private void blogPostToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ForumPost forumPost = new ForumPost();
+            forumPost.ShowDialog();
             this.Show();
         }
     }

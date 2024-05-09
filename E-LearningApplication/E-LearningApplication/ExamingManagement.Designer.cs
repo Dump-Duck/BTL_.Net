@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.TestName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TestID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ManageCourses = new System.Windows.Forms.Label();
@@ -235,8 +235,8 @@
             this.CreateAt});
             this.listViewDataExams.HideSelection = false;
             this.listViewDataExams.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
-            this.listViewDataExams.Location = new System.Drawing.Point(368, 113);
+            listViewItem1});
+            this.listViewDataExams.Location = new System.Drawing.Point(356, 127);
             this.listViewDataExams.Name = "listViewDataExams";
             this.listViewDataExams.Size = new System.Drawing.Size(612, 284);
             this.listViewDataExams.TabIndex = 80;

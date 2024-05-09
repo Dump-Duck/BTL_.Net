@@ -39,10 +39,12 @@
             this.coursesManagement = new System.Windows.Forms.ToolStripMenuItem();
             this.myCourses = new System.Windows.Forms.ToolStripMenuItem();
             this.usersManagement = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.examManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnPractice = new System.Windows.Forms.Button();
+            this.btnResult = new System.Windows.Forms.Button();
+            this.blogPostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.blogViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,10 +96,12 @@
             // 
             // forumToolStripMenuItem
             // 
+            this.forumToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.blogPostToolStripMenuItem,
+            this.blogViewToolStripMenuItem});
             this.forumToolStripMenuItem.Name = "forumToolStripMenuItem";
             this.forumToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.forumToolStripMenuItem.Text = "Forum";
-            this.forumToolStripMenuItem.Click += new System.EventHandler(this.forumToolStripMenuItem_Click);
             // 
             // coursesManagement
             // 
@@ -119,6 +123,13 @@
             this.usersManagement.Text = "Users Management";
             this.usersManagement.Click += new System.EventHandler(this.usersManagement_Click);
             // 
+            // examManagementToolStripMenuItem
+            // 
+            this.examManagementToolStripMenuItem.Name = "examManagementToolStripMenuItem";
+            this.examManagementToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
+            this.examManagementToolStripMenuItem.Text = "Exam Management";
+            this.examManagementToolStripMenuItem.Click += new System.EventHandler(this.examManagementToolStripMenuItem_Click);
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -130,34 +141,43 @@
             this.button1.Text = "My Courses";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnPractice
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(257, 273);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(202, 106);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Practice";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPractice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnPractice.Location = new System.Drawing.Point(257, 273);
+            this.btnPractice.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPractice.Name = "btnPractice";
+            this.btnPractice.Size = new System.Drawing.Size(202, 106);
+            this.btnPractice.TabIndex = 3;
+            this.btnPractice.Text = "Practice";
+            this.btnPractice.UseVisualStyleBackColor = true;
+            this.btnPractice.Click += new System.EventHandler(this.btnPractice_Click);
             // 
-            // button3
+            // btnResult
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button3.Location = new System.Drawing.Point(505, 273);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(202, 106);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Results";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnResult.Location = new System.Drawing.Point(505, 273);
+            this.btnResult.Margin = new System.Windows.Forms.Padding(2);
+            this.btnResult.Name = "btnResult";
+            this.btnResult.Size = new System.Drawing.Size(202, 106);
+            this.btnResult.TabIndex = 4;
+            this.btnResult.Text = "Results";
+            this.btnResult.UseVisualStyleBackColor = true;
+            this.btnResult.Click += new System.EventHandler(this.btnResult_Click);
             // 
-            // examManagementToolStripMenuItem
+            // blogPostToolStripMenuItem
             // 
-            this.examManagementToolStripMenuItem.Name = "examManagementToolStripMenuItem";
-            this.examManagementToolStripMenuItem.Size = new System.Drawing.Size(122, 20);
-            this.examManagementToolStripMenuItem.Text = "Exam Management";
-            this.examManagementToolStripMenuItem.Click += new System.EventHandler(this.examManagementToolStripMenuItem_Click);
+            this.blogPostToolStripMenuItem.Name = "blogPostToolStripMenuItem";
+            this.blogPostToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blogPostToolStripMenuItem.Text = "Blog Post";
+            this.blogPostToolStripMenuItem.Click += new System.EventHandler(this.blogPostToolStripMenuItem_Click);
+            // 
+            // blogViewToolStripMenuItem
+            // 
+            this.blogViewToolStripMenuItem.Name = "blogViewToolStripMenuItem";
+            this.blogViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blogViewToolStripMenuItem.Text = "Blog View";
+            this.blogViewToolStripMenuItem.Click += new System.EventHandler(this.blogViewToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -166,8 +186,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(716, 408);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnResult);
+            this.Controls.Add(this.btnPractice);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip);
             this.DoubleBuffered = true;
@@ -191,12 +211,14 @@
         private System.Windows.Forms.ToolStripMenuItem practiceToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem forumToolStripMenuItem;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnPractice;
+        private System.Windows.Forms.Button btnResult;
         private System.Windows.Forms.ToolStripMenuItem coursesManagement;
         private System.Windows.Forms.ToolStripMenuItem myCourses;
         private System.Windows.Forms.ToolStripMenuItem usersManagement;
         private System.Windows.Forms.ToolStripMenuItem examManagementToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blogPostToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem blogViewToolStripMenuItem;
     }
 }
 

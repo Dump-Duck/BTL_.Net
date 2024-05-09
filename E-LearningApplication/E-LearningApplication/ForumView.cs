@@ -21,8 +21,10 @@ namespace E_LearningApplication
 
         public void InitializeDataGridView()
         {
-            dataGridBlogView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridBlogView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridBlog.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridBlog.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridComments.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridComments.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
@@ -34,17 +36,27 @@ namespace E_LearningApplication
 
         private void blogShow()
         {
-
             sqlConnection.Open();
             sql = @"SELECT * FROM ForumPosts";
             sqlCommand = new SqlCommand(sql, sqlConnection);
             dataReader = sqlCommand.ExecuteReader();
             dataTable = new DataTable();
             dataTable.Load(dataReader);
-            dataGridBlogView.DataSource = dataTable;
+            dataGridBlog.DataSource = dataTable;
             sqlConnection.Close();
         }
-       
+        private void CommentsShow(string postID)
+        {
+            sqlConnection.Open();
+            sql = @"SELECT * FROM Comments Where PostID = " + postID + "";
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            dataReader = sqlCommand.ExecuteReader();
+            dataTable = new DataTable();
+            dataTable.Load(dataReader);
+            dataGridComments.DataSource = dataTable;
+            sqlConnection.Close();
+        }
+
         private void btnEditBlog_Click(object sender, EventArgs e)
         {
             sql = @"Update ForumPosts Set Title = N'" + textTitle.Text + @"', Content = N'" + richContent.Text + @"' WHERE PostID = N'" + textPostID.Text + @"' ";
@@ -67,13 +79,13 @@ namespace E_LearningApplication
             blogShow();
         }
 
-        private void dataGridBlogView_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridBlog_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textPostID.Text = dataGridBlogView.SelectedRows[0].Cells["PostID"].Value.ToString();
-            textPostedBy.Text = dataGridBlogView.SelectedRows[0].Cells["PostedBy"].Value.ToString();
-            textTitle.Text = dataGridBlogView.SelectedRows[0].Cells["Title"].Value.ToString();
-            richContent.Text = dataGridBlogView.SelectedRows[0].Cells["Content"].Value.ToString();
-
+            textPostID.Text = dataGridBlog.SelectedRows[0].Cells["PostID"].Value.ToString();
+            textPostedBy.Text = dataGridBlog.SelectedRows[0].Cells["PostedBy"].Value.ToString();
+            textTitle.Text = dataGridBlog.SelectedRows[0].Cells["Title"].Value.ToString();
+            richContent.Text = dataGridBlog.SelectedRows[0].Cells["Content"].Value.ToString();
+            CommentsShow(dataGridBlog.SelectedRows[0].Cells["PostID"].Value.ToString());
         }
 
         private void ForumView_Load(object sender, EventArgs e)
@@ -117,6 +129,50 @@ namespace E_LearningApplication
         private void blogManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This is forum view page!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnEditCmt_Click(object sender, EventArgs e)
+        {
+            sql = @"Update Comments Set Content = N'" + textContentCmt.Text + @"' WHERE PostID = N'" + textPostIDCmt.Text + @"' ";
+            sqlConnection.Open();
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("Comment Edit Successed!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            CommentsShow(dataGridBlog.SelectedRows[0].Cells["PostID"].Value.ToString());
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            sqlConnection.Open();
+            sql = @"Delete FROM Comments Where (PostID = N'" + textPostIDCmt.Text + @"')";
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("Comment Deleted!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            CommentsShow(dataGridBlog.SelectedRows[0].Cells["PostID"].Value.ToString());
+        }
+
+        private void btnCmt_Click(object sender, EventArgs e)
+        {
+            sqlConnection = new SqlConnection(stringConnect);
+            sql = @"INSERT INTO Comments(PostID,UserID,Content,CommentAt)
+                            VALUES (N'" + textPostIDCmt.Text + @"', N'" + textUserIDCmt.Text + @"', N'" + textContentCmt.Text + @"', GETDATE())";
+            sqlConnection.Open();
+            sqlCommand = new SqlCommand(sql, sqlConnection);
+            sqlCommand.ExecuteNonQuery();
+            sqlConnection.Close();
+            MessageBox.Show("Comment successed!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            textPostIDCmt.Clear();
+            textUserIDCmt.Clear();
+            textContentCmt.Clear();
+        }
+
+        private void dataGridComments_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textPostIDCmt.Text = dataGridComments.SelectedRows[0].Cells["PostID"].Value.ToString();
+            textUserIDCmt.Text = dataGridComments.SelectedRows[0].Cells["UserID"].Value.ToString();
+            textContentCmt.Text = dataGridComments.SelectedRows[0].Cells["Content"].Value.ToString();
         }
     }
 }
