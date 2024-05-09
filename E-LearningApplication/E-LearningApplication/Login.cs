@@ -75,8 +75,8 @@ namespace E_LearningApplication
                 {
                     userID = (int)d["UserID"];
                     sqlConnection.Close();
-                    this.Close();
                     IsLoggedIn = true;
+                    this.Close();
                 } else
                 {
                     MessageBox.Show("Invalid Information, Login Failed!", "Please Re-Login!", MessageBoxButtons.OK, MessageBoxIcon.Error);
