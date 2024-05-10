@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.forumPostsTableAdapter = new E_LearningApplication.AppDataSetTableAdapters.ForumPostsTableAdapter();
             this.commentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appDataSet = new E_LearningApplication.AppDataSet();
@@ -58,8 +58,6 @@
             this.textPostIDCmt = new System.Windows.Forms.TextBox();
             this.labelPostIDCmt = new System.Windows.Forms.Label();
             this.dataGridComments = new System.Windows.Forms.DataGridView();
-            this.textPostedAt = new System.Windows.Forms.TextBox();
-            this.labelPostedAt = new System.Windows.Forms.Label();
             this.richContent = new System.Windows.Forms.RichTextBox();
             this.textTitle = new System.Windows.Forms.TextBox();
             this.textPostID = new System.Windows.Forms.TextBox();
@@ -125,9 +123,9 @@
             this.dataGridBlogView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridBlogView.Name = "dataGridBlogView";
             this.dataGridBlogView.RowHeadersWidth = 62;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridBlogView.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridBlogView.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridBlogView.RowTemplate.Height = 28;
             this.dataGridBlogView.Size = new System.Drawing.Size(515, 510);
             this.dataGridBlogView.TabIndex = 19;
@@ -157,14 +155,14 @@
             // blogViewToolStripMenuItem
             // 
             this.blogViewToolStripMenuItem.Name = "blogViewToolStripMenuItem";
-            this.blogViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blogViewToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.blogViewToolStripMenuItem.Text = "Blog View";
             this.blogViewToolStripMenuItem.Click += new System.EventHandler(this.blogManagementToolStripMenuItem_Click);
             // 
             // blogPostToolStripMenuItem
             // 
             this.blogPostToolStripMenuItem.Name = "blogPostToolStripMenuItem";
-            this.blogPostToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.blogPostToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.blogPostToolStripMenuItem.Text = "Blog Post";
             this.blogPostToolStripMenuItem.Click += new System.EventHandler(this.blogPostToolStripMenuItem_Click);
             // 
@@ -326,25 +324,6 @@
             this.dataGridComments.TabIndex = 13;
             this.dataGridComments.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridComments_CellClick);
             // 
-            // textPostedAt
-            // 
-            this.textPostedAt.Location = new System.Drawing.Point(228, 301);
-            this.textPostedAt.Margin = new System.Windows.Forms.Padding(2);
-            this.textPostedAt.Name = "textPostedAt";
-            this.textPostedAt.Size = new System.Drawing.Size(113, 20);
-            this.textPostedAt.TabIndex = 12;
-            // 
-            // labelPostedAt
-            // 
-            this.labelPostedAt.AutoSize = true;
-            this.labelPostedAt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPostedAt.Location = new System.Drawing.Point(162, 302);
-            this.labelPostedAt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.labelPostedAt.Name = "labelPostedAt";
-            this.labelPostedAt.Size = new System.Drawing.Size(61, 15);
-            this.labelPostedAt.TabIndex = 11;
-            this.labelPostedAt.Text = "Posted At:";
-            // 
             // richContent
             // 
             this.richContent.Location = new System.Drawing.Point(53, 51);
@@ -454,8 +433,6 @@
             this.panel1.Controls.Add(this.textPostIDCmt);
             this.panel1.Controls.Add(this.labelPostIDCmt);
             this.panel1.Controls.Add(this.dataGridComments);
-            this.panel1.Controls.Add(this.textPostedAt);
-            this.panel1.Controls.Add(this.labelPostedAt);
             this.panel1.Controls.Add(this.richContent);
             this.panel1.Controls.Add(this.textTitle);
             this.panel1.Controls.Add(this.textPostID);
@@ -534,8 +511,6 @@
         private System.Windows.Forms.TextBox textPostIDCmt;
         private System.Windows.Forms.Label labelPostIDCmt;
         private System.Windows.Forms.DataGridView dataGridComments;
-        private System.Windows.Forms.TextBox textPostedAt;
-        private System.Windows.Forms.Label labelPostedAt;
         private System.Windows.Forms.RichTextBox richContent;
         private System.Windows.Forms.TextBox textTitle;
         private System.Windows.Forms.TextBox textPostID;

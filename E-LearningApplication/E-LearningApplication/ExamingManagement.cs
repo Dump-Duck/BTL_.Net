@@ -29,7 +29,6 @@ namespace E_LearningApplication
         }
         public void ExamingManagement_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(@""+ userID + @"", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
             sqlConnection = new SqlConnection(stringConnect);
             displayDataExams();
         }

@@ -29,8 +29,10 @@ namespace E_LearningApplication
         {
             listViewDataLessons.Items.Clear();
             sqlConnection.Open();
-            sql = @"select TestResults.ResultID, Tests.TestName, Users.Fullname, TestResults.TestSumitted, TestResults.Result from TestResults 
-                    inner join Tests on TestResults.TestID = Tests.TestID inner join Users on Users.UserID = Tests.UserID Where Users.UserID = N'" + userID + @"'";
+            sql = @"SELECT  TestResults.ResultID, Tests.TestName, TestResults.TestSumitted, TestResults.Result, TestResults.Date
+                    FROM Tests
+                    JOIN TestResults ON TestResults.TestID = Tests.TestID
+                    WHERE TestResults.UserID = N'" + userID + @"'";
             sqlCommand = new SqlCommand(sql, sqlConnection);
             dataReader = sqlCommand.ExecuteReader();
 

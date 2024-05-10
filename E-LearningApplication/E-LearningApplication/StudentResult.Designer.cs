@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem4 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
             this.panel1 = new System.Windows.Forms.Panel();
             this.label = new System.Windows.Forms.Label();
             this.Result = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TestSumitted = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listViewDataLessons = new System.Windows.Forms.ListView();
             this.resultID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.TestID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.UserID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.TestName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,13 +77,13 @@
             // 
             this.listViewDataLessons.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.resultID,
-            this.TestID,
-            this.UserID,
+            this.TestName,
             this.TestSumitted,
-            this.Result});
+            this.Result,
+            this.date});
             this.listViewDataLessons.HideSelection = false;
             this.listViewDataLessons.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem4});
+            listViewItem1});
             this.listViewDataLessons.Location = new System.Drawing.Point(81, 123);
             this.listViewDataLessons.Name = "listViewDataLessons";
             this.listViewDataLessons.Size = new System.Drawing.Size(644, 284);
@@ -95,15 +95,14 @@
             // 
             this.resultID.Text = "Id";
             // 
-            // TestID
+            // TestName
             // 
-            this.TestID.Text = "Test";
-            this.TestID.Width = 114;
+            this.TestName.Text = "Test Name";
+            this.TestName.Width = 173;
             // 
-            // UserID
+            // date
             // 
-            this.UserID.Text = "User";
-            this.UserID.Width = 173;
+            this.date.Text = "Date";
             // 
             // StudentResult
             // 
@@ -128,7 +127,7 @@
         private System.Windows.Forms.ColumnHeader TestSumitted;
         private System.Windows.Forms.ListView listViewDataLessons;
         private System.Windows.Forms.ColumnHeader resultID;
-        private System.Windows.Forms.ColumnHeader TestID;
-        private System.Windows.Forms.ColumnHeader UserID;
+        private System.Windows.Forms.ColumnHeader TestName;
+        private System.Windows.Forms.ColumnHeader date;
     }
 }

@@ -13,6 +13,7 @@ namespace E_LearningApplication
 {
     public partial class ForumView : Form
     {
+        int userID = Login.userID;
         public ForumView()
         {
             InitializeComponent();
@@ -86,12 +87,25 @@ namespace E_LearningApplication
             textTitle.Text = dataGridBlog.SelectedRows[0].Cells["Title"].Value.ToString();
             richContent.Text = dataGridBlog.SelectedRows[0].Cells["Content"].Value.ToString();
             CommentsShow(dataGridBlog.SelectedRows[0].Cells["PostID"].Value.ToString());
+            textPostIDCmt.Text = dataGridBlog.SelectedRows[0].Cells["PostID"].Value.ToString();
+            textUserIDCmt.Text = userID.ToString();
+            btnCmt.Visible = true;
+            textContentCmt.Clear();
+            if (userID.ToString() == textPostedBy.Text)
+            {
+                btnEditBlog.Visible = true;
+                btnDeleteBlog.Visible = true;
+            }
         }
 
         private void ForumView_Load(object sender, EventArgs e)
         {
             sqlConnection = new SqlConnection(stringConnect);
             blogShow();
+            btnEditBlog.Visible = false;
+            btnDeleteBlog.Visible = false;
+            btnEditCmt.Visible = false;
+            btnDelete.Visible = false;
         }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -155,6 +169,7 @@ namespace E_LearningApplication
 
         private void btnCmt_Click(object sender, EventArgs e)
         {
+
             sqlConnection = new SqlConnection(stringConnect);
             sql = @"INSERT INTO Comments(PostID,UserID,Content,CommentAt)
                             VALUES (N'" + textPostIDCmt.Text + @"', N'" + textUserIDCmt.Text + @"', N'" + textContentCmt.Text + @"', GETDATE())";
@@ -173,6 +188,15 @@ namespace E_LearningApplication
             textPostIDCmt.Text = dataGridComments.SelectedRows[0].Cells["PostID"].Value.ToString();
             textUserIDCmt.Text = dataGridComments.SelectedRows[0].Cells["UserID"].Value.ToString();
             textContentCmt.Text = dataGridComments.SelectedRows[0].Cells["Content"].Value.ToString();
+            if(userID.ToString() != textUserIDCmt.Text)
+            {
+                btnCmt.Visible = false;
+            }
+            if (userID.ToString() == textUserIDCmt.Text)
+            {
+                btnEditCmt.Visible = true;
+                btnDelete.Visible = true;
+            }
         }
     }
 }

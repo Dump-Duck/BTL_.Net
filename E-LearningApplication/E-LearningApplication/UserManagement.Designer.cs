@@ -45,7 +45,6 @@
             this.userDataGridView = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.levelBox = new System.Windows.Forms.ComboBox();
-            this.dateOfBirth_txt = new System.Windows.Forms.TextBox();
             this.avatar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.email_txt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.dateOfBirth = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -219,15 +219,6 @@
             this.levelBox.Size = new System.Drawing.Size(196, 21);
             this.levelBox.TabIndex = 55;
             // 
-            // dateOfBirth_txt
-            // 
-            this.dateOfBirth_txt.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateOfBirth_txt.Location = new System.Drawing.Point(215, 211);
-            this.dateOfBirth_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dateOfBirth_txt.Name = "dateOfBirth_txt";
-            this.dateOfBirth_txt.Size = new System.Drawing.Size(199, 24);
-            this.dateOfBirth_txt.TabIndex = 60;
-            // 
             // avatar
             // 
             this.avatar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -297,11 +288,21 @@
             this.label5.TabIndex = 66;
             this.label5.Text = "Email";
             // 
+            // dateOfBirth
+            // 
+            this.dateOfBirth.CustomFormat = "yyyy-MM-dd";
+            this.dateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateOfBirth.Location = new System.Drawing.Point(219, 215);
+            this.dateOfBirth.Name = "dateOfBirth";
+            this.dateOfBirth.Size = new System.Drawing.Size(200, 20);
+            this.dateOfBirth.TabIndex = 68;
+            // 
             // UserManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1220, 523);
+            this.Controls.Add(this.dateOfBirth);
             this.Controls.Add(this.email_txt);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -309,7 +310,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.avatar);
-            this.Controls.Add(this.dateOfBirth_txt);
             this.Controls.Add(this.userDataGridView);
             this.Controls.Add(this.userID_txt);
             this.Controls.Add(this.label6);
@@ -352,7 +352,6 @@
         private System.Windows.Forms.DataGridView userDataGridView;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox levelBox;
-        private System.Windows.Forms.TextBox dateOfBirth_txt;
         private System.Windows.Forms.TextBox avatar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -360,5 +359,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox email_txt;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateOfBirth;
     }
 }

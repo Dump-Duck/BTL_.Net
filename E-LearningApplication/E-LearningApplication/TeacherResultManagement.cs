@@ -28,8 +28,11 @@ namespace E_LearningApplication
         {
             listViewDataResult.Items.Clear();
             sqlConnection.Open();
-            sql = @"select TestResults.ResultID, Tests.TestName, Users.Fullname, TestResults.TestSumitted, TestResults.Result, TestResults.Date from TestResults 
-                    inner join Tests on TestResults.TestID = Tests.TestID inner join Users on Users.UserID = Tests.UserID Where Tests.UserID = N'" + userID + @"'";
+            sql = @"SELECT TestResults.ResultID, Tests.TestName, Users.Fullname, TestResults.TestSumitted, TestResults.Result, TestResults.Date
+                    FROM Tests
+                    JOIN TestResults TestResults ON TestResults.TestID = Tests.TestID
+                    JOIN Users ON TestResults.UserID = Users.UserID
+                    WHERE Tests.UserID = N'" + userID + @"'";
             sqlCommand = new SqlCommand(sql, sqlConnection);
             dataReader = sqlCommand.ExecuteReader();
 
@@ -52,7 +55,7 @@ namespace E_LearningApplication
         {
             listViewDataResult.Items.Clear();
             sqlConnection.Open();
-            sql = @"Update TestResults Set Result = N'" + result_txt.Text + @"' WHERE UserID = N'" + userID + @"' ";
+            sql = @"Update TestResults Set Result = N'" + result_txt.Text + @"' WHERE ResultID = N'" + resultID_txt.Text + @"' ";
             sqlCommand = new SqlCommand(sql, sqlConnection);
             sqlCommand.ExecuteNonQuery();
             sqlConnection.Close();

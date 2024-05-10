@@ -44,6 +44,7 @@ namespace E_LearningApplication
             }
             MessageBox.Show("Add exam success!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
             sqlConnection.Close();
+            this.Close();
         }
 
         private void btnSubmitTest_Click(object sender, EventArgs e)

@@ -85,7 +85,9 @@ namespace E_LearningApplication
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            sql = @"Update Users Set Username = N'" + username_txt.Text + @"', Password = N'" + password_txt.Text + @"', Email = N'" + email_txt.Text + @"', Fullname = N'" + fullname_txt.Text + @"', Level = N'" + levelBox.Text + @"', Role = N'" + roleBox.Text + @"'
+            sql = @"Update Users Set Username = N'" + username_txt.Text + @"', Password = N'" + password_txt.Text + @"', 
+                    Email = N'" + email_txt.Text + @"', Fullname = N'" + fullname_txt.Text + @"', 
+                    Level = N'" + levelBox.Text + @"', Role = N'" + roleBox.Text + @"' , DateOfBirth = N'" + dateOfBirth.Text + @"', UpdateAt = GETDATE()
                     WHERE UserID = N'" + userID_txt.Text + @"' ";
             sqlConnection.Open();
             sqlCommand = new SqlCommand(sql, sqlConnection);
@@ -113,7 +115,7 @@ namespace E_LearningApplication
             password_txt.Text = userDataGridView.SelectedRows[0].Cells["Password"].Value.ToString();
             email_txt.Text = userDataGridView.SelectedRows[0].Cells["Email"].Value.ToString();
             fullname_txt.Text = userDataGridView.SelectedRows[0].Cells["Fullname"].Value.ToString();
-            dateOfBirth_txt.Text = userDataGridView.SelectedRows[0].Cells["DateOfBirth"].Value.ToString();
+            dateOfBirth.Text = userDataGridView.SelectedRows[0].Cells["DateOfBirth"].Value.ToString();
             avatar.Text = userDataGridView.SelectedRows[0].Cells["Avatar"].Value.ToString();
             levelBox.Text = userDataGridView.SelectedRows[0].Cells["Level"].Value.ToString();
             roleBox.Text = userDataGridView.SelectedRows[0].Cells["Role"].Value.ToString();
