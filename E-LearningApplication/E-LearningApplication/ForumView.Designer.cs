@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.forumPostsTableAdapter = new E_LearningApplication.AppDataSetTableAdapters.ForumPostsTableAdapter();
             this.commentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appDataSet = new E_LearningApplication.AppDataSet();
@@ -39,15 +39,7 @@
             this.dataGridBlogView = new System.Windows.Forms.DataGridView();
             this.labelForumTitle = new System.Windows.Forms.Label();
             this.panelBlogView = new System.Windows.Forms.Panel();
-            this.blogViewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blogPostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.forumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.coursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.practiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnEditCmt = new System.Windows.Forms.Button();
-            this.btnOpenBlog = new System.Windows.Forms.Button();
             this.commentsTableAdapter = new E_LearningApplication.AppDataSetTableAdapters.CommentsTableAdapter();
             this.btnCmt = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -75,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.appDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBlogView)).BeginInit();
             this.panelBlogView.SuspendLayout();
-            this.menuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridComments)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBlog)).BeginInit();
             this.panel1.SuspendLayout();
@@ -119,13 +110,13 @@
             // 
             this.dataGridBlogView.BackgroundColor = System.Drawing.Color.Cornsilk;
             this.dataGridBlogView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridBlogView.Location = new System.Drawing.Point(353, 95);
+            this.dataGridBlogView.Location = new System.Drawing.Point(353, 64);
             this.dataGridBlogView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridBlogView.Name = "dataGridBlogView";
             this.dataGridBlogView.RowHeadersWidth = 62;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridBlogView.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridBlogView.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridBlogView.RowTemplate.Height = 28;
             this.dataGridBlogView.Size = new System.Drawing.Size(515, 510);
             this.dataGridBlogView.TabIndex = 19;
@@ -146,74 +137,15 @@
             // 
             this.panelBlogView.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panelBlogView.Controls.Add(this.labelForumTitle);
-            this.panelBlogView.Location = new System.Drawing.Point(-1, 27);
+            this.panelBlogView.Location = new System.Drawing.Point(-1, 0);
             this.panelBlogView.Margin = new System.Windows.Forms.Padding(2);
             this.panelBlogView.Name = "panelBlogView";
             this.panelBlogView.Size = new System.Drawing.Size(869, 64);
             this.panelBlogView.TabIndex = 18;
             // 
-            // blogViewToolStripMenuItem
-            // 
-            this.blogViewToolStripMenuItem.Name = "blogViewToolStripMenuItem";
-            this.blogViewToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.blogViewToolStripMenuItem.Text = "Blog View";
-            this.blogViewToolStripMenuItem.Click += new System.EventHandler(this.blogManagementToolStripMenuItem_Click);
-            // 
-            // blogPostToolStripMenuItem
-            // 
-            this.blogPostToolStripMenuItem.Name = "blogPostToolStripMenuItem";
-            this.blogPostToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
-            this.blogPostToolStripMenuItem.Text = "Blog Post";
-            this.blogPostToolStripMenuItem.Click += new System.EventHandler(this.blogPostToolStripMenuItem_Click);
-            // 
-            // forumToolStripMenuItem
-            // 
-            this.forumToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.blogPostToolStripMenuItem,
-            this.blogViewToolStripMenuItem});
-            this.forumToolStripMenuItem.Name = "forumToolStripMenuItem";
-            this.forumToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.forumToolStripMenuItem.Text = "Forum";
-            // 
-            // coursesToolStripMenuItem
-            // 
-            this.coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
-            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.coursesToolStripMenuItem.Text = "Courses";
-            this.coursesToolStripMenuItem.Click += new System.EventHandler(this.coursesToolStripMenuItem_Click);
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.homeToolStripMenuItem.Text = "Home";
-            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
-            // 
-            // menuStrip
-            // 
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
-            this.coursesToolStripMenuItem,
-            this.practiceToolStripMenuItem,
-            this.forumToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(875, 24);
-            this.menuStrip.TabIndex = 17;
-            this.menuStrip.Text = "menuStrip";
-            // 
-            // practiceToolStripMenuItem
-            // 
-            this.practiceToolStripMenuItem.Name = "practiceToolStripMenuItem";
-            this.practiceToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.practiceToolStripMenuItem.Text = "Practices";
-            this.practiceToolStripMenuItem.Click += new System.EventHandler(this.practiceToolStripMenuItem_Click);
-            // 
             // btnEditCmt
             // 
-            this.btnEditCmt.Location = new System.Drawing.Point(1, 567);
+            this.btnEditCmt.Location = new System.Drawing.Point(1, 536);
             this.btnEditCmt.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditCmt.Name = "btnEditCmt";
             this.btnEditCmt.Size = new System.Drawing.Size(112, 38);
@@ -221,16 +153,6 @@
             this.btnEditCmt.Text = "Edit CMT";
             this.btnEditCmt.UseVisualStyleBackColor = true;
             this.btnEditCmt.Click += new System.EventHandler(this.btnEditCmt_Click);
-            // 
-            // btnOpenBlog
-            // 
-            this.btnOpenBlog.Location = new System.Drawing.Point(354, 567);
-            this.btnOpenBlog.Margin = new System.Windows.Forms.Padding(2);
-            this.btnOpenBlog.Name = "btnOpenBlog";
-            this.btnOpenBlog.Size = new System.Drawing.Size(515, 38);
-            this.btnOpenBlog.TabIndex = 20;
-            this.btnOpenBlog.Text = "View";
-            this.btnOpenBlog.UseVisualStyleBackColor = true;
             // 
             // commentsTableAdapter
             // 
@@ -315,12 +237,12 @@
             // dataGridComments
             // 
             this.dataGridComments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridComments.Location = new System.Drawing.Point(8, 330);
+            this.dataGridComments.Location = new System.Drawing.Point(8, 297);
             this.dataGridComments.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridComments.Name = "dataGridComments";
             this.dataGridComments.RowHeadersWidth = 62;
             this.dataGridComments.RowTemplate.Height = 28;
-            this.dataGridComments.Size = new System.Drawing.Size(332, 98);
+            this.dataGridComments.Size = new System.Drawing.Size(332, 131);
             this.dataGridComments.TabIndex = 13;
             this.dataGridComments.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridComments_CellClick);
             // 
@@ -402,12 +324,12 @@
             // dataGridBlog
             // 
             this.dataGridBlog.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridBlog.Location = new System.Drawing.Point(353, 95);
+            this.dataGridBlog.Location = new System.Drawing.Point(354, 66);
             this.dataGridBlog.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridBlog.Name = "dataGridBlog";
             this.dataGridBlog.RowHeadersWidth = 62;
             this.dataGridBlog.RowTemplate.Height = 28;
-            this.dataGridBlog.Size = new System.Drawing.Size(515, 468);
+            this.dataGridBlog.Size = new System.Drawing.Size(515, 508);
             this.dataGridBlog.TabIndex = 22;
             this.dataGridBlog.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridBlog_CellClick);
             // 
@@ -443,7 +365,7 @@
             this.panel1.Controls.Add(this.labelTilteBlog);
             this.panel1.Controls.Add(this.labelPostedBy);
             this.panel1.Controls.Add(this.labelPostID);
-            this.panel1.Location = new System.Drawing.Point(-1, 95);
+            this.panel1.Location = new System.Drawing.Point(-1, 64);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(350, 510);
@@ -453,11 +375,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 605);
+            this.ClientSize = new System.Drawing.Size(875, 578);
             this.Controls.Add(this.panelBlogView);
-            this.Controls.Add(this.menuStrip);
             this.Controls.Add(this.btnEditCmt);
-            this.Controls.Add(this.btnOpenBlog);
             this.Controls.Add(this.dataGridBlog);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridBlogView);
@@ -470,14 +390,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.appDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBlogView)).EndInit();
             this.panelBlogView.ResumeLayout(false);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridComments)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBlog)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -492,15 +409,7 @@
         private System.Windows.Forms.DataGridView dataGridBlogView;
         private System.Windows.Forms.Label labelForumTitle;
         private System.Windows.Forms.Panel panelBlogView;
-        private System.Windows.Forms.ToolStripMenuItem blogViewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blogPostToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem forumToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem coursesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem practiceToolStripMenuItem;
         private System.Windows.Forms.Button btnEditCmt;
-        private System.Windows.Forms.Button btnOpenBlog;
         private AppDataSetTableAdapters.CommentsTableAdapter commentsTableAdapter;
         private System.Windows.Forms.Button btnCmt;
         private System.Windows.Forms.Button btnDelete;

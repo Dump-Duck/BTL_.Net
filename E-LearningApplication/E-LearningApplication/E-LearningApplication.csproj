@@ -173,12 +173,6 @@
     <Compile Include="Test.Designer.cs">
       <DependentUpon>Test.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserInformation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserInformation.Designer.cs">
-      <DependentUpon>UserInformation.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserManagement.cs">
       <SubType>Form</SubType>
     </Compile>

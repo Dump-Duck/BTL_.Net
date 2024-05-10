@@ -28,82 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.coursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.practiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.forumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label1 = new System.Windows.Forms.Label();
             this.lessonsDataGridView = new System.Windows.Forms.DataGridView();
             this.noneLesson = new System.Windows.Forms.Label();
-            this.menuStrip.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Lesson = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.lessonsDataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip
-            // 
-            this.menuStrip.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
-            this.coursesToolStripMenuItem,
-            this.practiceToolStripMenuItem,
-            this.forumToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 4, 0, 4);
-            this.menuStrip.Size = new System.Drawing.Size(1304, 42);
-            this.menuStrip.TabIndex = 5;
-            this.menuStrip.Text = "menuStrip";
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(87, 34);
-            this.homeToolStripMenuItem.Text = "Home";
-            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
-            // 
-            // coursesToolStripMenuItem
-            // 
-            this.coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
-            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(104, 34);
-            this.coursesToolStripMenuItem.Text = "Courses";
-            this.coursesToolStripMenuItem.Click += new System.EventHandler(this.coursesToolStripMenuItem_Click);
-            // 
-            // practiceToolStripMenuItem
-            // 
-            this.practiceToolStripMenuItem.Name = "practiceToolStripMenuItem";
-            this.practiceToolStripMenuItem.Size = new System.Drawing.Size(113, 34);
-            this.practiceToolStripMenuItem.Text = "Practices";
-            this.practiceToolStripMenuItem.Click += new System.EventHandler(this.practiceToolStripMenuItem_Click);
-            // 
-            // forumToolStripMenuItem
-            // 
-            this.forumToolStripMenuItem.Name = "forumToolStripMenuItem";
-            this.forumToolStripMenuItem.Size = new System.Drawing.Size(90, 34);
-            this.forumToolStripMenuItem.Text = "Forum";
-            this.forumToolStripMenuItem.Click += new System.EventHandler(this.forumToolStripMenuItem_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(554, 174);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 38);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Lessons";
             // 
             // lessonsDataGridView
             // 
             this.lessonsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.lessonsDataGridView.Location = new System.Drawing.Point(48, 277);
-            this.lessonsDataGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lessonsDataGridView.Location = new System.Drawing.Point(28, 97);
+            this.lessonsDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lessonsDataGridView.Name = "lessonsDataGridView";
             this.lessonsDataGridView.RowHeadersWidth = 51;
             this.lessonsDataGridView.RowTemplate.Height = 24;
-            this.lessonsDataGridView.Size = new System.Drawing.Size(1212, 401);
+            this.lessonsDataGridView.Size = new System.Drawing.Size(661, 250);
             this.lessonsDataGridView.TabIndex = 6;
             // 
             // noneLesson
@@ -112,43 +53,61 @@
             this.noneLesson.BackColor = System.Drawing.Color.DarkGray;
             this.noneLesson.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.noneLesson.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.142858F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.noneLesson.Location = new System.Drawing.Point(442, 477);
+            this.noneLesson.Location = new System.Drawing.Point(239, 214);
+            this.noneLesson.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.noneLesson.Name = "noneLesson";
-            this.noneLesson.Size = new System.Drawing.Size(424, 25);
+            this.noneLesson.Size = new System.Drawing.Size(227, 13);
             this.noneLesson.TabIndex = 8;
             this.noneLesson.Text = "(Lessons Of This Course Will Be Update Soon)";
             this.noneLesson.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.Controls.Add(this.Lesson);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(711, 86);
+            this.panel1.TabIndex = 41;
+            // 
+            // Lesson
+            // 
+            this.Lesson.AutoSize = true;
+            this.Lesson.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lesson.ForeColor = System.Drawing.Color.White;
+            this.Lesson.Location = new System.Drawing.Point(314, 30);
+            this.Lesson.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Lesson.Name = "Lesson";
+            this.Lesson.Size = new System.Drawing.Size(77, 23);
+            this.Lesson.TabIndex = 0;
+            this.Lesson.Text = "Lessons";
+            // 
             // Lessons
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1304, 711);
+            this.ClientSize = new System.Drawing.Size(711, 385);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.noneLesson);
-            this.Controls.Add(this.menuStrip);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.lessonsDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Lessons";
             this.Text = "Lessons";
             this.Load += new System.EventHandler(this.Lessons_Load);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lessonsDataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem coursesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem practiceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem forumToolStripMenuItem;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView lessonsDataGridView;
         private System.Windows.Forms.Label noneLesson;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Lesson;
     }
 }

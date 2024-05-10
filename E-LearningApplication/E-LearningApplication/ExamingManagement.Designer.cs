@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             this.TestName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.TestID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ManageCourses = new System.Windows.Forms.Label();
@@ -71,9 +71,9 @@
             this.ManageCourses.Location = new System.Drawing.Point(382, 27);
             this.ManageCourses.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ManageCourses.Name = "ManageCourses";
-            this.ManageCourses.Size = new System.Drawing.Size(161, 23);
+            this.ManageCourses.Size = new System.Drawing.Size(146, 23);
             this.ManageCourses.TabIndex = 0;
-            this.ManageCourses.Text = "Manage Lessons";
+            this.ManageCourses.Text = "Manage Exam";
             // 
             // Content
             // 
@@ -109,7 +109,7 @@
             this.btnUpdateExam.Name = "btnUpdateExam";
             this.btnUpdateExam.Size = new System.Drawing.Size(179, 45);
             this.btnUpdateExam.TabIndex = 78;
-            this.btnUpdateExam.Text = "Update Lesson";
+            this.btnUpdateExam.Text = "Update Test";
             this.btnUpdateExam.UseVisualStyleBackColor = false;
             this.btnUpdateExam.Click += new System.EventHandler(this.btnUpdateExam_Click);
             // 
@@ -138,7 +138,7 @@
             this.btnDeleteExam.Name = "btnDeleteExam";
             this.btnDeleteExam.Size = new System.Drawing.Size(167, 45);
             this.btnDeleteExam.TabIndex = 79;
-            this.btnDeleteExam.Text = "Delete Lesson";
+            this.btnDeleteExam.Text = "Delete Test";
             this.btnDeleteExam.UseVisualStyleBackColor = false;
             this.btnDeleteExam.Click += new System.EventHandler(this.btnDeleteExam_Click);
             // 
@@ -161,7 +161,7 @@
             this.btnAddExam.Name = "btnAddExam";
             this.btnAddExam.Size = new System.Drawing.Size(165, 45);
             this.btnAddExam.TabIndex = 77;
-            this.btnAddExam.Text = "Add Lesson";
+            this.btnAddExam.Text = "Add Test";
             this.btnAddExam.UseVisualStyleBackColor = false;
             this.btnAddExam.Click += new System.EventHandler(this.btnAddExam_Click);
             // 
@@ -235,13 +235,14 @@
             this.CreateAt});
             this.listViewDataExams.HideSelection = false;
             this.listViewDataExams.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.listViewDataExams.Location = new System.Drawing.Point(356, 127);
             this.listViewDataExams.Name = "listViewDataExams";
             this.listViewDataExams.Size = new System.Drawing.Size(612, 284);
             this.listViewDataExams.TabIndex = 80;
             this.listViewDataExams.UseCompatibleStateImageBehavior = false;
             this.listViewDataExams.View = System.Windows.Forms.View.Details;
+            this.listViewDataExams.Click += new System.EventHandler(this.listViewDataExams_Click);
             // 
             // ExamingManagement
             // 

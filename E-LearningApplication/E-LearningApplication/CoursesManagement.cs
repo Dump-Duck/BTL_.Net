@@ -23,7 +23,6 @@ namespace E_LearningApplication
         }
 
         int userID = Login.userID;
-        // them chuoi ket not 
         string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
         SqlConnection sqlConnection;
@@ -48,7 +47,6 @@ namespace E_LearningApplication
                 listViewDataCourses.Items[i].SubItems.Add(dataReader[3].ToString());
                 listViewDataCourses.Items[i].SubItems.Add(dataReader[4].ToString());
                 listViewDataCourses.Items[i].SubItems.Add(dataReader[5].ToString());
-                listViewDataCourses.Items[i].SubItems.Add(dataReader[6].ToString());
                 i++;
             }
             sqlConnection.Close();
@@ -67,7 +65,6 @@ namespace E_LearningApplication
             textBoxCourseName.Text = listViewDataCourses.SelectedItems[0].SubItems[1].Text;
             textBoxDescriptionCourse.Text = listViewDataCourses.SelectedItems[0].SubItems[2].Text;
             comboBoxLevelCourse.Text = listViewDataCourses.SelectedItems[0].SubItems[3].Text;
-            textBoxCreateBy.Text = listViewDataCourses.SelectedItems[0].SubItems[4].Text;
         }
 
         private void btnAddCourse_Click(object sender, EventArgs e)

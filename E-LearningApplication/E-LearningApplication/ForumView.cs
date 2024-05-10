@@ -96,6 +96,11 @@ namespace E_LearningApplication
                 btnEditBlog.Visible = true;
                 btnDeleteBlog.Visible = true;
             }
+            else
+            {
+                btnEditBlog.Visible = false;
+                btnDeleteBlog.Visible = false;
+            }
         }
 
         private void ForumView_Load(object sender, EventArgs e)

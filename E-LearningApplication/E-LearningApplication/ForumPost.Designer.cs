@@ -28,86 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.coursesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.practiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.forumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blogPostToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.blogManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnPostBlog = new System.Windows.Forms.Button();
             this.panelBlogPost = new System.Windows.Forms.Panel();
             this.labelForumTitle = new System.Windows.Forms.Label();
             this.textTitleBox = new System.Windows.Forms.TextBox();
-            this.textPostedBy = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.richContentBox = new System.Windows.Forms.RichTextBox();
-            this.menuStrip.SuspendLayout();
             this.panelBlogPost.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip
-            // 
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
-            this.coursesToolStripMenuItem,
-            this.practiceToolStripMenuItem,
-            this.forumToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(735, 24);
-            this.menuStrip.TabIndex = 12;
-            this.menuStrip.Text = "menuStrip";
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.homeToolStripMenuItem.Text = "Home";
-            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
-            // 
-            // coursesToolStripMenuItem
-            // 
-            this.coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
-            this.coursesToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.coursesToolStripMenuItem.Text = "Courses";
-            this.coursesToolStripMenuItem.Click += new System.EventHandler(this.coursesToolStripMenuItem_Click);
-            // 
-            // practiceToolStripMenuItem
-            // 
-            this.practiceToolStripMenuItem.Name = "practiceToolStripMenuItem";
-            this.practiceToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.practiceToolStripMenuItem.Text = "Practices";
-            this.practiceToolStripMenuItem.Click += new System.EventHandler(this.practiceToolStripMenuItem_Click);
-            // 
-            // forumToolStripMenuItem
-            // 
-            this.forumToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.blogPostToolStripMenuItem,
-            this.blogManagementToolStripMenuItem});
-            this.forumToolStripMenuItem.Name = "forumToolStripMenuItem";
-            this.forumToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
-            this.forumToolStripMenuItem.Text = "Forum";
-            // 
-            // blogPostToolStripMenuItem
-            // 
-            this.blogPostToolStripMenuItem.Name = "blogPostToolStripMenuItem";
-            this.blogPostToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.blogPostToolStripMenuItem.Text = "Blog Post";
-            this.blogPostToolStripMenuItem.Click += new System.EventHandler(this.blogPostToolStripMenuItem_Click);
-            // 
-            // blogManagementToolStripMenuItem
-            // 
-            this.blogManagementToolStripMenuItem.Name = "blogManagementToolStripMenuItem";
-            this.blogManagementToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.blogManagementToolStripMenuItem.Text = "Blog View";
-            this.blogManagementToolStripMenuItem.Click += new System.EventHandler(this.blogManagementToolStripMenuItem_Click);
             // 
             // btnPostBlog
             // 
@@ -125,9 +56,9 @@
             // 
             // panelBlogPost
             // 
-            this.panelBlogPost.BackColor = System.Drawing.Color.Moccasin;
+            this.panelBlogPost.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.panelBlogPost.Controls.Add(this.labelForumTitle);
-            this.panelBlogPost.Location = new System.Drawing.Point(0, 26);
+            this.panelBlogPost.Location = new System.Drawing.Point(0, 0);
             this.panelBlogPost.Margin = new System.Windows.Forms.Padding(2);
             this.panelBlogPost.Name = "panelBlogPost";
             this.panelBlogPost.Size = new System.Drawing.Size(735, 64);
@@ -153,40 +84,19 @@
             this.textTitleBox.Size = new System.Drawing.Size(581, 20);
             this.textTitleBox.TabIndex = 9;
             // 
-            // textPostedBy
-            // 
-            this.textPostedBy.Location = new System.Drawing.Point(74, 199);
-            this.textPostedBy.Margin = new System.Windows.Forms.Padding(2);
-            this.textPostedBy.Name = "textPostedBy";
-            this.textPostedBy.Size = new System.Drawing.Size(136, 20);
-            this.textPostedBy.TabIndex = 8;
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Linen;
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.richContentBox);
             this.panel1.Controls.Add(this.textTitleBox);
             this.panel1.Controls.Add(this.btnPostBlog);
-            this.panel1.Controls.Add(this.textPostedBy);
-            this.panel1.Location = new System.Drawing.Point(0, 94);
+            this.panel1.Location = new System.Drawing.Point(0, 64);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(735, 224);
             this.panel1.TabIndex = 14;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(2, 202);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Posted By:";
             // 
             // label2
             // 
@@ -223,40 +133,26 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 320);
-            this.Controls.Add(this.menuStrip);
+            this.ClientSize = new System.Drawing.Size(735, 291);
             this.Controls.Add(this.panelBlogPost);
             this.Controls.Add(this.panel1);
             this.Name = "ForumPost";
             this.Text = "ForumPost";
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
             this.panelBlogPost.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem coursesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem practiceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem forumToolStripMenuItem;
         private System.Windows.Forms.Button btnPostBlog;
         private System.Windows.Forms.Panel panelBlogPost;
         private System.Windows.Forms.Label labelForumTitle;
         private System.Windows.Forms.TextBox textTitleBox;
-        private System.Windows.Forms.TextBox textPostedBy;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RichTextBox richContentBox;
-        private System.Windows.Forms.ToolStripMenuItem blogPostToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem blogManagementToolStripMenuItem;
     }
 }

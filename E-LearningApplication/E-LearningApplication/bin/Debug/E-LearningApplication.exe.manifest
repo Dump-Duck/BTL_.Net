@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="E-LearningApplication.exe" size="504320">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="E-LearningApplication.exe" size="500736">
       <assemblyIdentity name="E-LearningApplication" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Rh9r86/z159CLWtDfkAfgPnWWK9FXhTzx7t3rrDPTT0=</dsig:DigestValue>
+        <dsig:DigestValue>8kPNOYJhHq2NtbJEH8/rvibwvlj7sV9mg4AoaB4UXlM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

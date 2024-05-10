@@ -45,9 +45,7 @@
             this.userDataGridView = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
             this.levelBox = new System.Windows.Forms.ComboBox();
-            this.avatar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.roleBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.email_txt = new System.Windows.Forms.TextBox();
@@ -88,13 +86,13 @@
             this.password_txt.Location = new System.Drawing.Point(215, 159);
             this.password_txt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.password_txt.Name = "password_txt";
-            this.password_txt.Size = new System.Drawing.Size(199, 24);
+            this.password_txt.Size = new System.Drawing.Size(204, 24);
             this.password_txt.TabIndex = 54;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(212, 134);
+            this.label8.Location = new System.Drawing.Point(212, 137);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(53, 13);
@@ -104,7 +102,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(68, 134);
+            this.label9.Location = new System.Drawing.Point(68, 137);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(55, 13);
@@ -219,34 +217,15 @@
             this.levelBox.Size = new System.Drawing.Size(196, 21);
             this.levelBox.TabIndex = 55;
             // 
-            // avatar
-            // 
-            this.avatar.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.avatar.Location = new System.Drawing.Point(215, 262);
-            this.avatar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.avatar.Name = "avatar";
-            this.avatar.Size = new System.Drawing.Size(199, 24);
-            this.avatar.TabIndex = 61;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(216, 191);
+            this.label1.Location = new System.Drawing.Point(212, 191);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 62;
             this.label1.Text = "Date Of Birth";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(216, 246);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 63;
-            this.label2.Text = "Avatar";
             // 
             // roleBox
             // 
@@ -254,7 +233,7 @@
             this.roleBox.Items.AddRange(new object[] {
             "Student",
             "Teacher"});
-            this.roleBox.Location = new System.Drawing.Point(215, 309);
+            this.roleBox.Location = new System.Drawing.Point(215, 262);
             this.roleBox.Name = "roleBox";
             this.roleBox.Size = new System.Drawing.Size(199, 21);
             this.roleBox.TabIndex = 64;
@@ -262,7 +241,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(216, 293);
+            this.label3.Location = new System.Drawing.Point(216, 246);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(29, 13);
@@ -292,7 +271,7 @@
             // 
             this.dateOfBirth.CustomFormat = "yyyy-MM-dd";
             this.dateOfBirth.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateOfBirth.Location = new System.Drawing.Point(219, 215);
+            this.dateOfBirth.Location = new System.Drawing.Point(215, 211);
             this.dateOfBirth.Name = "dateOfBirth";
             this.dateOfBirth.Size = new System.Drawing.Size(200, 20);
             this.dateOfBirth.TabIndex = 68;
@@ -307,9 +286,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.roleBox);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.avatar);
             this.Controls.Add(this.userDataGridView);
             this.Controls.Add(this.userID_txt);
             this.Controls.Add(this.label6);
@@ -352,9 +329,7 @@
         private System.Windows.Forms.DataGridView userDataGridView;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox levelBox;
-        private System.Windows.Forms.TextBox avatar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox roleBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox email_txt;

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("");
             this.CreateAt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.UpdateAt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.CreatedBy = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -38,9 +38,6 @@
             this.Description = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listViewDataCourses = new System.Windows.Forms.ListView();
             this.CourseName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Lessons = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.textBoxCreateBy = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnUpdateCourse = new System.Windows.Forms.Button();
             this.btnAddCourse = new System.Windows.Forms.Button();
             this.ManageCourses = new System.Windows.Forms.Label();
@@ -98,11 +95,10 @@
             this.Level,
             this.CreatedBy,
             this.UpdateAt,
-            this.CreateAt,
-            this.Lessons});
+            this.CreateAt});
             this.listViewDataCourses.HideSelection = false;
             this.listViewDataCourses.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
+            listViewItem3});
             this.listViewDataCourses.Location = new System.Drawing.Point(337, 135);
             this.listViewDataCourses.Name = "listViewDataCourses";
             this.listViewDataCourses.Size = new System.Drawing.Size(742, 284);
@@ -115,30 +111,6 @@
             // 
             this.CourseName.Text = "Course Name";
             this.CourseName.Width = 106;
-            // 
-            // Lessons
-            // 
-            this.Lessons.Text = "Lessons";
-            this.Lessons.Width = 83;
-            // 
-            // textBoxCreateBy
-            // 
-            this.textBoxCreateBy.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCreateBy.Location = new System.Drawing.Point(797, 453);
-            this.textBoxCreateBy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textBoxCreateBy.Name = "textBoxCreateBy";
-            this.textBoxCreateBy.Size = new System.Drawing.Size(293, 24);
-            this.textBoxCreateBy.TabIndex = 27;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(721, 458);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(59, 13);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Created By";
             // 
             // btnUpdateCourse
             // 
@@ -315,8 +287,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.textBoxCourseName);
             this.Controls.Add(this.listViewDataCourses);
-            this.Controls.Add(this.textBoxCreateBy);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnUpdateCourse);
             this.Controls.Add(this.btnAddCourse);
             this.Controls.Add(this.btnDeleteCourse);
@@ -339,8 +309,6 @@
         private System.Windows.Forms.ColumnHeader Level;
         private System.Windows.Forms.ColumnHeader Description;
         private System.Windows.Forms.ListView listViewDataCourses;
-        private System.Windows.Forms.TextBox textBoxCreateBy;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnUpdateCourse;
         private System.Windows.Forms.Button btnAddCourse;
         private System.Windows.Forms.Label ManageCourses;
@@ -355,7 +323,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBoxCourseName;
         private System.Windows.Forms.ColumnHeader CourseName;
-        private System.Windows.Forms.ColumnHeader Lessons;
         private System.Windows.Forms.Button btnLesson;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }

@@ -35,8 +35,8 @@
             // btnSubmitTest
             // 
             this.btnSubmitTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSubmitTest.Location = new System.Drawing.Point(459, 180);
-            this.btnSubmitTest.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmitTest.Location = new System.Drawing.Point(270, 65);
+            this.btnSubmitTest.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmitTest.Name = "btnSubmitTest";
             this.btnSubmitTest.Size = new System.Drawing.Size(138, 54);
             this.btnSubmitTest.TabIndex = 0;
@@ -47,7 +47,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(288, 180);
+            this.button2.Location = new System.Drawing.Point(99, 65);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 54);
@@ -59,10 +59,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 346);
+            this.ClientSize = new System.Drawing.Size(515, 200);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnSubmitTest);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Examing";
             this.Text = "Examing";
             this.Load += new System.EventHandler(this.Examing_Load);

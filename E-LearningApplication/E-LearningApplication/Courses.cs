@@ -29,8 +29,12 @@ namespace E_LearningApplication
                 sqlConnection.Open();
 
                 // All Courses query then fill in gridview table
-                string sqlAllCourses = @"SELECT * FROM Courses";
+                string sqlAllCourses = @"SELECT c.CourseID, c.CourseName, c.CreateAt, c.CreateBy, c.Description, c.Level, c.UpdateAt, u.Level
+                                        FROM Courses c
+                                        INNER JOIN Users u ON c.Level = u.Level
+                                        WHERE u.UserID = @userID";
                 SqlCommand cmdAllCourses = new SqlCommand(sqlAllCourses, sqlConnection);
+                cmdAllCourses.Parameters.AddWithValue("@userID", userID);
                 SqlDataAdapter adapterAllCourses = new SqlDataAdapter(cmdAllCourses);
                 DataTable tableAllCourses = new DataTable();
                 adapterAllCourses.Fill(tableAllCourses);
@@ -65,6 +69,8 @@ namespace E_LearningApplication
                     coursesDataGridView.DataSource = tableAllCourses;
                 } else
                 {
+                    coursesDataGridView.Visible = false;
+                    dataGridView.Visible = true;
                     nullCourse.Visible = true;
                 }
             }

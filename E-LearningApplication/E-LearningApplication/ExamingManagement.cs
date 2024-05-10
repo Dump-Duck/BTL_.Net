@@ -59,7 +59,7 @@ namespace E_LearningApplication
         private void listViewDataExams_Click(object sender, EventArgs e)
         {
             textBoxExamID.Text = listViewDataExams.SelectedItems[0].SubItems[0].Text;
-            textBoxExamName.Text = listViewDataExams.SelectedItems[0].SubItems[2].Text;
+            textBoxExamName.Text = listViewDataExams.SelectedItems[0].SubItems[1].Text;
         }
 
 

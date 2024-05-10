@@ -116,7 +116,6 @@ namespace E_LearningApplication
             email_txt.Text = userDataGridView.SelectedRows[0].Cells["Email"].Value.ToString();
             fullname_txt.Text = userDataGridView.SelectedRows[0].Cells["Fullname"].Value.ToString();
             dateOfBirth.Text = userDataGridView.SelectedRows[0].Cells["DateOfBirth"].Value.ToString();
-            avatar.Text = userDataGridView.SelectedRows[0].Cells["Avatar"].Value.ToString();
             levelBox.Text = userDataGridView.SelectedRows[0].Cells["Level"].Value.ToString();
             roleBox.Text = userDataGridView.SelectedRows[0].Cells["Role"].Value.ToString();
         }
