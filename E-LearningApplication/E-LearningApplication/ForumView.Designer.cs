@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.forumPostsTableAdapter = new E_LearningApplication.AppDataSetTableAdapters.ForumPostsTableAdapter();
             this.commentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appDataSet = new E_LearningApplication.AppDataSet();
@@ -114,9 +114,9 @@
             this.dataGridBlogView.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridBlogView.Name = "dataGridBlogView";
             this.dataGridBlogView.RowHeadersWidth = 62;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.dataGridBlogView.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.dataGridBlogView.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridBlogView.RowTemplate.Height = 28;
             this.dataGridBlogView.Size = new System.Drawing.Size(515, 510);
             this.dataGridBlogView.TabIndex = 19;
@@ -203,6 +203,7 @@
             this.textUserIDCmt.Location = new System.Drawing.Point(53, 452);
             this.textUserIDCmt.Margin = new System.Windows.Forms.Padding(2);
             this.textUserIDCmt.Name = "textUserIDCmt";
+            this.textUserIDCmt.ReadOnly = true;
             this.textUserIDCmt.Size = new System.Drawing.Size(62, 20);
             this.textUserIDCmt.TabIndex = 17;
             // 
@@ -221,6 +222,7 @@
             this.textPostIDCmt.Location = new System.Drawing.Point(53, 432);
             this.textPostIDCmt.Margin = new System.Windows.Forms.Padding(2);
             this.textPostIDCmt.Name = "textPostIDCmt";
+            this.textPostIDCmt.ReadOnly = true;
             this.textPostIDCmt.Size = new System.Drawing.Size(62, 20);
             this.textPostIDCmt.TabIndex = 15;
             // 
@@ -268,6 +270,7 @@
             this.textPostID.Location = new System.Drawing.Point(53, 3);
             this.textPostID.Margin = new System.Windows.Forms.Padding(2);
             this.textPostID.Name = "textPostID";
+            this.textPostID.ReadOnly = true;
             this.textPostID.Size = new System.Drawing.Size(62, 20);
             this.textPostID.TabIndex = 8;
             // 
@@ -276,6 +279,7 @@
             this.textPostedBy.Location = new System.Drawing.Point(211, 3);
             this.textPostedBy.Margin = new System.Windows.Forms.Padding(2);
             this.textPostedBy.Name = "textPostedBy";
+            this.textPostedBy.ReadOnly = true;
             this.textPostedBy.Size = new System.Drawing.Size(68, 20);
             this.textPostedBy.TabIndex = 7;
             // 

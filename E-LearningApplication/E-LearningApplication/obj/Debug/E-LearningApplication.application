@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="E-LearningApplication.exe.manifest" size="4645">
+    <dependentAssembly dependencyType="install" codebase="E-LearningApplication.exe.manifest" size="10783">
       <assemblyIdentity name="E-LearningApplication.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>A3W/34xZ14LpcDLRLaE0XOCbpjIxDZTzhaLPGz8evDo=</dsig:DigestValue>
+        <dsig:DigestValue>v93uM2qTekbj3M8N7E8nCVn8xFPBAFb3JtiIiQEe+SU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

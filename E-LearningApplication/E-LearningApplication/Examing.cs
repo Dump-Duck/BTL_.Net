@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -67,6 +68,43 @@ namespace E_LearningApplication
         private void Examing_Load(object sender, EventArgs e)
         {
             sqlConnection = new SqlConnection(stringConnect);
+        }
+
+        private void btnDownload_Click(object sender, EventArgs e)
+        {
+            sql = "SELECT TestName, TestContent FROM Tests WHERE TestID = @TestID";
+            using (SqlConnection connection = new SqlConnection(stringConnect))
+            {
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@TestID", testID);
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string fileName = reader["TestName"].ToString();
+                            byte[] pdfData = (byte[])reader["TestContent"];
+
+                            SaveFileDialog saveFileDialog = new SaveFileDialog();
+                            saveFileDialog.FileName = fileName;
+                            saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+
+                            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                            {
+                                string filePath = saveFileDialog.FileName;
+                                File.WriteAllBytes(filePath, pdfData);
+                                MessageBox.Show("PDF file has been saved successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("No data found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
         }
     }
 }

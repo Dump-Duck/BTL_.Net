@@ -47,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.result_txt = new System.Windows.Forms.TextBox();
+            this.btnDownload = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,9 +56,9 @@
             this.submitBtn.BackColor = System.Drawing.Color.LightSkyBlue;
             this.submitBtn.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submitBtn.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.submitBtn.Location = new System.Drawing.Point(63, 356);
+            this.submitBtn.Location = new System.Drawing.Point(176, 356);
             this.submitBtn.Name = "submitBtn";
-            this.submitBtn.Size = new System.Drawing.Size(165, 45);
+            this.submitBtn.Size = new System.Drawing.Size(135, 45);
             this.submitBtn.TabIndex = 62;
             this.submitBtn.Text = "Submit Result";
             this.submitBtn.UseVisualStyleBackColor = false;
@@ -212,11 +213,25 @@
             this.result_txt.Size = new System.Drawing.Size(292, 24);
             this.result_txt.TabIndex = 73;
             // 
+            // btnDownload
+            // 
+            this.btnDownload.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnDownload.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDownload.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDownload.Location = new System.Drawing.Point(19, 356);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(135, 45);
+            this.btnDownload.TabIndex = 75;
+            this.btnDownload.Text = "Download";
+            this.btnDownload.UseVisualStyleBackColor = false;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
+            // 
             // TeacherResultManagement
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(918, 434);
+            this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.result_txt);
             this.Controls.Add(this.label1);
@@ -257,5 +272,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox result_txt;
         private System.Windows.Forms.ColumnHeader Date;
+        private System.Windows.Forms.Button btnDownload;
     }
 }

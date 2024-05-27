@@ -73,7 +73,7 @@
             // textUserName
             // 
             this.textUserName.Location = new System.Drawing.Point(401, 69);
-            this.textUserName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textUserName.Margin = new System.Windows.Forms.Padding(2);
             this.textUserName.Multiline = true;
             this.textUserName.Name = "textUserName";
             this.textUserName.Size = new System.Drawing.Size(212, 33);
@@ -93,7 +93,7 @@
             // textPassword
             // 
             this.textPassword.Location = new System.Drawing.Point(401, 146);
-            this.textPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textPassword.Margin = new System.Windows.Forms.Padding(2);
             this.textPassword.Multiline = true;
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '*';
@@ -106,7 +106,7 @@
             this.btnSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.Location = new System.Drawing.Point(552, 353);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(122, 46);
             this.btnSignIn.TabIndex = 21;
@@ -120,7 +120,7 @@
             this.btnSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.Location = new System.Drawing.Point(401, 353);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(122, 46);
             this.btnSignUp.TabIndex = 22;
@@ -142,7 +142,7 @@
             // textEmail
             // 
             this.textEmail.Location = new System.Drawing.Point(401, 216);
-            this.textEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textEmail.Margin = new System.Windows.Forms.Padding(2);
             this.textEmail.Multiline = true;
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(212, 33);
@@ -174,7 +174,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(396, 418);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,7 +189,7 @@
             "Independent",
             "Proficient"});
             this.levelSelectBox.Location = new System.Drawing.Point(402, 289);
-            this.levelSelectBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.levelSelectBox.Margin = new System.Windows.Forms.Padding(2);
             this.levelSelectBox.Name = "levelSelectBox";
             this.levelSelectBox.Size = new System.Drawing.Size(92, 21);
             this.levelSelectBox.TabIndex = 28;
@@ -201,7 +201,7 @@
             "Teacher",
             "Student"});
             this.roleSelectBox.Location = new System.Drawing.Point(552, 289);
-            this.roleSelectBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.roleSelectBox.Margin = new System.Windows.Forms.Padding(2);
             this.roleSelectBox.Name = "roleSelectBox";
             this.roleSelectBox.Size = new System.Drawing.Size(92, 21);
             this.roleSelectBox.TabIndex = 29;
@@ -213,7 +213,7 @@
             this.hidePassBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hidePassBtn.Image = ((System.Drawing.Image)(resources.GetObject("hidePassBtn.Image")));
             this.hidePassBtn.Location = new System.Drawing.Point(584, 152);
-            this.hidePassBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hidePassBtn.Margin = new System.Windows.Forms.Padding(2);
             this.hidePassBtn.Name = "hidePassBtn";
             this.hidePassBtn.Size = new System.Drawing.Size(22, 21);
             this.hidePassBtn.TabIndex = 30;
@@ -227,7 +227,7 @@
             this.showPassBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.showPassBtn.Image = ((System.Drawing.Image)(resources.GetObject("showPassBtn.Image")));
             this.showPassBtn.Location = new System.Drawing.Point(584, 152);
-            this.showPassBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.showPassBtn.Margin = new System.Windows.Forms.Padding(2);
             this.showPassBtn.Name = "showPassBtn";
             this.showPassBtn.Size = new System.Drawing.Size(22, 21);
             this.showPassBtn.TabIndex = 31;
@@ -255,7 +255,7 @@
             this.Controls.Add(this.textUserName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SignUp";
             this.Text = "SignUp";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

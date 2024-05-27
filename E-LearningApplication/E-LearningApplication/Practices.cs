@@ -21,7 +21,6 @@ namespace E_LearningApplication
             instance = this;
         }
 
-        int userID = Login.userID;
         // them chuoi ket not 
         string stringConnect = @"Data Source=DESKTOP-NC6U1Q4\MSSQL_SERVER;Initial Catalog=E-LearningApplicationDB;Integrated Security=True;Encrypt=False";
         string sql;
@@ -49,33 +48,6 @@ namespace E_LearningApplication
                 i++;
             }
             sqlConnection.Close();
-        }
-
-        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Courses courses = new Courses();
-            courses.ShowDialog();
-            this.Show();
-        }
-
-        private void forumToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-/*            this.Hide();
-            Forum forum = new Forum();
-            forum.ShowDialog();
-            this.Show();*/
-
-        }
-
-        private void practiceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("This is practices page!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Practices_Load(object sender, EventArgs e)

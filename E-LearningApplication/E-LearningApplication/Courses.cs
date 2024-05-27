@@ -35,9 +35,9 @@ namespace E_LearningApplication
                                         WHERE u.UserID = @userID";
                 SqlCommand cmdAllCourses = new SqlCommand(sqlAllCourses, sqlConnection);
                 cmdAllCourses.Parameters.AddWithValue("@userID", userID);
-                SqlDataAdapter adapterAllCourses = new SqlDataAdapter(cmdAllCourses);
+                SqlDataAdapter adapterAllCourses = new SqlDataAdapter(cmdAllCourses); //lưu trữ, truy xuất dữ liệu dataset
                 DataTable tableAllCourses = new DataTable();
-                adapterAllCourses.Fill(tableAllCourses);
+                adapterAllCourses.Fill(tableAllCourses); //ánh xạ dữ liệu từ dataset
 
                 // Query User courses then remove similar course in all courses
                 string sqlUserCourses = @"SELECT CourseID FROM UserCourses WHERE UserID = @UserID";
@@ -109,33 +109,6 @@ namespace E_LearningApplication
                     MessageBox.Show("Enrollment failed!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-        }
-
-        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void practiceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Practices testing = new Practices();
-            testing.ShowDialog();
-            this.Show();
-        }
-
-        private void forumToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-/*            this.Hide();
-            Forum forum = new Forum();
-            forum.ShowDialog();
-            this.Show();*/
-
-        }
-
-        private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("This is courses page!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Courses_Load(object sender, EventArgs e)

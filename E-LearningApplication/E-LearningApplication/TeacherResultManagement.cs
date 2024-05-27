@@ -4,10 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using iTextSharp.text.pdf;
+using iTextSharp.text.pdf.parser;
 
 namespace E_LearningApplication
 {
@@ -75,6 +78,42 @@ namespace E_LearningApplication
             testName_txt.Text = listViewDataResult.SelectedItems[0].SubItems[1].Text;
             userName_txt.Text = listViewDataResult.SelectedItems[0].SubItems[2].Text;
             result_txt.Text = listViewDataResult.SelectedItems[0].SubItems[4].Text;
+        }
+
+        private void btnDownload_Click(object sender, EventArgs e)
+        {
+            sql = "SELECT TestSumitted FROM TestResults WHERE ResultID = @ResultID";
+            int ResultID = int.Parse(listViewDataResult.SelectedItems[0].SubItems[0].Text);
+            using (SqlConnection connection = new SqlConnection(stringConnect))
+            {
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@ResultID", ResultID);
+                    connection.Open();
+
+                    using (SqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            byte[] pdfData = (byte[])reader["TestSumitted"];
+
+                            SaveFileDialog saveFileDialog = new SaveFileDialog();
+                            saveFileDialog.Filter = "PDF files (*.pdf)|*.pdf";
+
+                            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                            {
+                                string filePath = saveFileDialog.FileName;
+                                File.WriteAllBytes(filePath, pdfData);
+                                MessageBox.Show("PDF file has been saved successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("No data found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
         }
     }
 }

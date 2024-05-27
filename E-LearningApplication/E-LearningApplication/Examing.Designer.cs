@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.btnSubmitTest = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnDownload = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.SuspendLayout();
             // 
             // btnSubmitTest
             // 
             this.btnSubmitTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSubmitTest.Location = new System.Drawing.Point(270, 65);
+            this.btnSubmitTest.Location = new System.Drawing.Point(251, 61);
             this.btnSubmitTest.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmitTest.Name = "btnSubmitTest";
             this.btnSubmitTest.Size = new System.Drawing.Size(138, 54);
@@ -44,23 +45,24 @@
             this.btnSubmitTest.UseVisualStyleBackColor = true;
             this.btnSubmitTest.Click += new System.EventHandler(this.btnSubmitTest_Click);
             // 
-            // button2
+            // btnDownload
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.Location = new System.Drawing.Point(99, 65);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 54);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Test";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnDownload.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDownload.Location = new System.Drawing.Point(70, 61);
+            this.btnDownload.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDownload.Name = "btnDownload";
+            this.btnDownload.Size = new System.Drawing.Size(138, 54);
+            this.btnDownload.TabIndex = 1;
+            this.btnDownload.Text = "Download";
+            this.btnDownload.UseVisualStyleBackColor = true;
+            this.btnDownload.Click += new System.EventHandler(this.btnDownload_Click);
             // 
             // Examing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 200);
-            this.Controls.Add(this.button2);
+            this.ClientSize = new System.Drawing.Size(472, 175);
+            this.Controls.Add(this.btnDownload);
             this.Controls.Add(this.btnSubmitTest);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Examing";
@@ -73,6 +75,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnSubmitTest;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDownload;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }

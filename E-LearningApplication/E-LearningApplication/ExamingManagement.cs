@@ -49,7 +49,6 @@ namespace E_LearningApplication
                 listViewDataExams.Items[i].SubItems.Add(dataReader[2].ToString());
                 listViewDataExams.Items[i].SubItems.Add(dataReader[3].ToString());
                 listViewDataExams.Items[i].SubItems.Add(dataReader[4].ToString());
-
                 i++;
             }
             sqlConnection.Close();

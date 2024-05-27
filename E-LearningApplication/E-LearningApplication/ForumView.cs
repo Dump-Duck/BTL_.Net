@@ -100,6 +100,8 @@ namespace E_LearningApplication
             {
                 btnEditBlog.Visible = false;
                 btnDeleteBlog.Visible = false;
+                textTitle.ReadOnly = true;
+                richContent.ReadOnly = true;
             }
         }
 
@@ -111,43 +113,6 @@ namespace E_LearningApplication
             btnDeleteBlog.Visible = false;
             btnEditCmt.Visible = false;
             btnDelete.Visible = false;
-        }
-
-        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Home home = new Home();
-            home.ShowDialog();
-            this.Show();
-        }
-
-        private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Courses courses = new Courses();
-            courses.ShowDialog();
-            this.Show();
-        }
-
-        private void practiceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Practices practices = new Practices();
-            practices.ShowDialog();
-            this.Show();
-        }
-
-        private void blogPostToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ForumPost forumPost = new ForumPost();
-            forumPost.ShowDialog();
-            this.Show();
-        }
-
-        private void blogManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("This is forum view page!", "E-Learning Application", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void btnEditCmt_Click(object sender, EventArgs e)
@@ -195,12 +160,15 @@ namespace E_LearningApplication
             textContentCmt.Text = dataGridComments.SelectedRows[0].Cells["Content"].Value.ToString();
             if(userID.ToString() != textUserIDCmt.Text)
             {
+                btnEditCmt.Visible = false;
+                btnDelete.Visible = false;
                 btnCmt.Visible = false;
             }
             if (userID.ToString() == textUserIDCmt.Text)
             {
                 btnEditCmt.Visible = true;
                 btnDelete.Visible = true;
+                btnCmt.Visible = true;
             }
         }
     }

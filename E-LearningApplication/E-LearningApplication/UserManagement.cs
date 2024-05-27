@@ -14,7 +14,7 @@ namespace E_LearningApplication
     public partial class UserManagement : Form
     {
         public UserManagement()
-        {
+        { 
             InitializeComponent();
             InitializeDataGridView();
         }
@@ -32,37 +32,6 @@ namespace E_LearningApplication
         SqlCommand sqlCommand;
         SqlDataReader dataReader;
         DataTable dataTable;
-
-        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void coursesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Courses courses = new Courses();
-            courses.ShowDialog();
-            this.Show();
-        }
-
-        private void practiceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Practices practices = new Practices();
-            practices.ShowDialog();
-            this.Show();
-        }
-
-        private void blogPostToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void blogManagementToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void userManagementShow()
         {
